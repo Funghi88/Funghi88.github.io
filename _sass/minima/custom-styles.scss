@@ -323,6 +323,7 @@ main .wrapper {
   font-size: 1rem;
   color: $muted;
   margin: 0 0 32px 0;
+  text-align: center;
 }
 
 // ——— Post cards (card grid) ———
@@ -405,15 +406,33 @@ main .wrapper {
 .site-footer {
   padding: 24px 0;
   font-size: 0.9rem;
-  color: $muted;
+  text-align: center;
 }
 
-.site-footer a {
-  color: $link;
+.site-footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  flex-wrap: wrap;
 }
 
-.site-footer a:hover {
+.site-footer-links a,
+.site-footer-heart,
+.site-footer-est {
+  color: $heading;
+  transition: color 0.15s ease;
+}
+
+.site-footer-links a:hover,
+.site-footer-heart:hover {
   color: $link-hover;
+}
+
+.site-footer-links svg {
+  display: block;
+  vertical-align: middle;
 }
 
 // ——— Content paper (A4-style for About, posts) ———
