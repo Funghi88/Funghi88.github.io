@@ -4,20 +4,30 @@
 </section>
 
 <script>
-// Typing effect for banner text
+// Typewriter effect - one letter at a time, American keyboard style
 (function() {
   var el = document.getElementById('hero-banner-text');
   if (!el) return;
   var text = el.textContent;
   el.textContent = '';
   el.innerHTML = '';
-  for (var i = 0; i < text.length; i++) {
-    var span = document.createElement('span');
-    span.className = 'typing-char';
-    span.textContent = text[i];
-    span.style.animationDelay = (i * 0.04) + 's';
-    el.appendChild(span);
+  var cursor = document.createElement('span');
+  cursor.className = 'typing-cursor';
+  el.appendChild(cursor);
+  var i = 0;
+  var speed = 85;
+  function type() {
+    if (i < text.length) {
+      var span = document.createElement('span');
+      span.textContent = text[i];
+      el.insertBefore(span, cursor);
+      i++;
+      setTimeout(type, speed + (Math.random() * 30 - 10));
+    } else {
+      el.classList.add('typing-done');
+    }
   }
+  setTimeout(type, 400);
 })();
 </script>
 <script>
