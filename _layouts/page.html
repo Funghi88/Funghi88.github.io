@@ -2,6 +2,9 @@
 layout: base
 ---
 
+{% if page.banner_text %}
+{% include hero-banner.html text=page.banner_text %}
+{% endif %}
 <main class="page-content">
   <div class="wrapper">
     <article class="page">

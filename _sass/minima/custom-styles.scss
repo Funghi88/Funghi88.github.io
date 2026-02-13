@@ -140,10 +140,9 @@ header.site-header .wrapper,
   inset: 0;
   z-index: 9999;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding-top: 66px;
-  padding-right: 32px;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.2s, visibility 0.2s;
@@ -159,32 +158,57 @@ header.site-header .wrapper,
 .search-overlay-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba($heading, 0.4);
+  background: rgba($heading, 0.5);
+  backdrop-filter: blur(4px);
   cursor: pointer;
 }
 
 .search-overlay-content {
   position: relative;
   background: #fff;
-  border-radius: 8px;
-  width: 360px;
-  max-width: calc(100vw - 64px);
-  box-shadow: 0 8px 32px rgba($heading, 0.2);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 16px 48px rgba($heading, 0.25);
   overflow: hidden;
-  margin-right: 0;
+}
+
+.search-overlay-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px 0;
+}
+
+.search-overlay-title {
+  font-size: 0.9rem;
+  color: $muted;
+}
+
+.search-overlay-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: $muted;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+.search-overlay-close:hover {
+  color: $heading;
 }
 
 .search-input {
   width: 100%;
   padding: 16px 20px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   border: none;
-  border-bottom: 1px solid rgba($heading, 0.1);
   outline: none;
 }
 
 .search-results {
-  max-height: 320px;
+  max-height: 280px;
   overflow-y: auto;
 }
 
@@ -196,7 +220,8 @@ header.site-header .wrapper,
   border-bottom: 1px solid rgba($heading, 0.06);
 }
 
-.search-result-item:hover {
+.search-result-item:hover,
+.search-result-item.selected {
   background: rgba($accent-aqua, 0.3);
 }
 
@@ -209,6 +234,14 @@ header.site-header .wrapper,
 .search-result-item span {
   font-size: 0.85rem;
   color: $muted;
+}
+
+.search-overlay-hint {
+  font-size: 0.75rem;
+  color: $muted;
+  text-align: center;
+  margin: 0;
+  padding: 12px 20px 16px;
 }
 
 // ——— Hero banner ———
@@ -246,6 +279,20 @@ header.site-header .wrapper,
   padding: 28px 24px;
   max-width: 560px;
   letter-spacing: 0.02em;
+}
+
+// Movie-style caption animation
+.hero-banner-caption {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: caption-appear 1.2s ease-out 0.4s forwards;
+}
+
+@keyframes caption-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 // ——— Home ———

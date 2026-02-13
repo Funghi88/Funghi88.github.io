@@ -9,9 +9,9 @@ baseurl: ""
 url: "https://funghi88.github.io"
 exclude: ["DESIGN-REFERENCES.md", "DESIGN-FRAMEWORK.md", "post-template.md", "DESIGN-SPEC.md", "README.md"]
 
-# Giscus comments (https://giscus.app) - enable Discussions on repo first, then get IDs from giscus.app
+# Giscus comments (https://giscus.app)
 giscus:
   repo: "Funghi88/Funghi88.github.io"
-  repo_id: ""          # Get from giscus.app after enabling Discussions
-  category: "Comments"
-  category_id: ""      # Get from giscus.app
+  repo_id: "R_kgDORPN2Yw"
+  category: "General"
+  category_id: "DIC_kwDORPN2Y84C2V6G"

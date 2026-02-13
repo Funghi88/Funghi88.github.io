@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /en/about/
 banner_text: "about me"
 ---
 
