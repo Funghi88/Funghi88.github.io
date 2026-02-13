@@ -11,13 +11,13 @@
       <a class="page-link" href="{% if page.url contains '/en/' %}{{ '/en/about/' | relative_url }}{% else %}{{ '/about/' | relative_url }}{% endif %}">About</a>
       <button type="button" class="search-toggle" aria-label="Search" title="Search (⌘K)">⌕</button>
       {% if page.url contains '/en/' %}
-      <a class="page-link" href="{{ page.url | remove_first: '/en' | default: '/' | relative_url }}" aria-label="中文">中</a>
+      <a class="page-link lang-switch" href="{{ page.url | remove_first: '/en' | default: '/' | relative_url }}" data-lang="zh" aria-label="中文">中</a>
       {% else %}
-      <a class="page-link" href="{{ '/en' | append: page.url | relative_url }}" aria-label="English">En</a>
+      <a class="page-link lang-switch" href="{{ '/en' | append: page.url | relative_url }}" data-lang="en" aria-label="English">En</a>
       {% endif %}
     </nav>
   </div>
-  {% if page.banner_text or page.layout == 'home' %}
-  {% include hero-banner.html text=page.banner_text %}
+  {% if page.banner_text or page.layout == 'home' or page.layout == 'post' %}
+  {% include hero-banner.html text=page.banner_text | default: "Simplicity holds depth — that is truth." %}
   {% endif %}
 </header>

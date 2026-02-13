@@ -1,0 +1,15 @@
+<script>
+(function() {
+  var path = window.location.pathname;
+  if (path !== '/' && path !== '/index.html' && path !== '') return;
+  var stored = localStorage.getItem('lang');
+  if (stored) return;
+  var pref = navigator.language || navigator.userLanguage || '';
+  if (pref.toLowerCase().indexOf('zh') === 0) {
+    localStorage.setItem('lang', 'zh');
+    return;
+  }
+  localStorage.setItem('lang', 'en');
+  window.location.replace('/en/');
+})();
+</script>

@@ -6,6 +6,11 @@
 </footer>
 <script>
 (function() {
+  document.querySelectorAll('a.lang-switch').forEach(function(a) {
+    a.addEventListener('click', function() { localStorage.setItem('lang', a.getAttribute('data-lang') || ''); });
+  });
+})();
+(function() {
   var writingLink = document.querySelector('a.page-link[href*="#writing"]');
   if (!writingLink) return;
   writingLink.addEventListener('click', function(e) {

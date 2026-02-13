@@ -282,17 +282,15 @@ header.site-header .wrapper,
   letter-spacing: 0.02em;
 }
 
-// Movie-style caption animation
-.hero-banner-caption {
+// Movie subtitle typing effect
+.hero-banner-caption .typing-char {
   opacity: 0;
-  transform: translateY(12px);
-  animation: caption-appear 1.2s ease-out 0.4s forwards;
+  animation: typing-char 0.15s ease-out forwards;
 }
 
-@keyframes caption-appear {
+@keyframes typing-char {
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
