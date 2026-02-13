@@ -1,6 +1,6 @@
-// DESIGN-SPEC palette — Linear Now layout
+// Tw93 framework + Linear Now aesthetic — DESIGN-SPEC palette
 // bg #EFF7F5 | text #3d4d4a | heading #2a3a38 | muted #5a6a67
-// link #80D0ED | link-hover #5a9bb8 | accent-aqua #B8F3EB | accent-pink #F9DDDD | accent-rose #F0BBDD
+// link #80D0ED | link-hover #5a9bb8 | accent-aqua #B8F3EB | accent-pink #F9DDDD
 
 @charset "utf-8";
 
@@ -11,12 +11,8 @@ $muted: #5a6a67;
 $link: #80D0ED;
 $link-hover: #5a9bb8;
 $accent-aqua: #B8F3EB;
-$accent-pink: #F9DDDD;
-$accent-rose: #F0BBDD;
 
-$content-wide: 960px;
-
-// ——— Base (ensure palette shows) ———
+// ——— Base ———
 body {
   background-color: $bg;
   color: $text;
@@ -32,43 +28,25 @@ a:hover {
   color: $link-hover;
 }
 
-// ——— Wrapper ———
-.wrapper.wrapper-wide {
-  max-width: $content-wide;
-}
-
-// ——— Header ———
-.linear-header {
+// ——— Header (Tw93: title | nav) ———
+.site-header {
   border-top: none;
   border-bottom: 1px solid $accent-aqua;
   padding: 20px 0;
 }
 
-.linear-header .wrapper {
+.site-header .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.site-brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-  color: inherit;
-}
-
-.site-avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 6px;
-  object-fit: cover;
 }
 
 .site-title {
   font-size: 1.125rem;
   font-weight: 600;
   letter-spacing: -0.02em;
+  text-decoration: none;
+  color: $heading;
 }
 
 .site-nav {
@@ -86,107 +64,56 @@ a:hover {
   color: $heading;
 }
 
-// ——— Page header (Linear: large title + filter bar) ———
-.linear-layout .page-header {
-  padding: 48px 0 24px;
+// ——— Home (Tw93: tagline + post list) ———
+.page-content {
+  padding: 32px 0;
 }
 
-.page-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  margin: 0 0 8px 0;
-  line-height: 1.1;
-  color: $heading;
-  background: linear-gradient(90deg, rgba(184, 243, 235, 0.7) 0%, transparent 100%);
-  padding: 0.1em 0.2em 0.1em 0;
-  display: inline-block;
-}
-
-.page-tagline {
-  font-size: 0.95rem;
+.tagline {
+  font-size: 1rem;
   color: $muted;
-  margin: 0 0 24px 0;
+  margin: 0 0 32px 0;
 }
 
-.filter-nav {
-  display: flex;
-  gap: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid $accent-aqua;
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.filter-link {
-  color: $muted;
-  font-size: 0.9rem;
-  text-decoration: none;
+.post-item {
+  margin-bottom: 24px;
 }
 
-.filter-link:hover,
-.filter-link.active {
-  color: $heading;
-}
-
-// ——— Post grid (Linear: full-width cards) ———
-.post-grid {
-  padding: 32px 0 0;
-}
-
-.post-card-linear {
-  margin-bottom: 32px;
-}
-
-.post-card-linear .post-card-link {
+.post-link {
   display: block;
   text-decoration: none;
   color: inherit;
 }
 
-.post-card-linear .post-card-link:hover .post-card-title {
+.post-link:hover .post-title {
   color: $link-hover;
 }
 
-.post-card-image {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  background: $accent-pink;
-  margin-bottom: 16px;
-  border-radius: 8px;
-}
-
-.post-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.post-card-body {
-  padding: 0;
-}
-
-.post-card-meta {
-  font-size: 0.85rem;
-  color: $muted;
-  display: block;
-  margin-bottom: 8px;
-}
-
-.post-card-title {
-  font-size: 1.375rem;
+.post-item .post-title {
+  font-size: 1.125rem;
   font-weight: 600;
-  letter-spacing: -0.02em;
-  margin: 0 0 8px 0;
-  line-height: 1.3;
   color: $heading;
   transition: color 0.15s ease;
 }
 
-.post-card-excerpt {
+.post-date {
+  font-size: 0.9rem;
+  color: $muted;
+  margin-left: 4px;
+}
+
+.post-excerpt {
+  display: block;
   font-size: 0.95rem;
   color: $muted;
   line-height: 1.5;
-  margin: 0;
+  margin-top: 6px;
 }
 
 // ——— Footer ———
@@ -211,8 +138,8 @@ a:hover {
   border-bottom: 1px solid $accent-aqua;
 }
 
-.post-title {
-  font-size: 2rem;
+.post .post-header .post-title {
+  font-size: 1.75rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   color: $heading;
@@ -235,11 +162,11 @@ a:hover {
   border-top: 1px solid $accent-aqua;
 }
 
-.post-back {
+.post-footer .post-back {
   font-size: 0.95rem;
   color: $muted;
 }
 
-.post-back:hover {
+.post-footer .post-back:hover {
   color: $heading;
 }

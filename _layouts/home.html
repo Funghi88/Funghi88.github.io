@@ -2,16 +2,9 @@
 layout: base
 ---
 
-<main class="page-content linear-layout">
-  <div class="wrapper wrapper-wide">
-    <header class="page-header">
-      <h1 class="page-title">{{ site.title }}</h1>
-      <p class="page-tagline">{{ page.brief | default: "AI-Native Product Architect. Frontier Web3 Research · Tooling · Design Systems." }}</p>
-      <nav class="filter-nav" aria-label="Filter">
-        <a href="{{ '/' | relative_url }}" class="filter-link active">All</a>
-        <a href="{{ '/' | relative_url }}#writing" class="filter-link">Writing</a>
-      </nav>
-    </header>
+<main class="page-content">
+  <div class="wrapper">
+    <p class="tagline">{{ page.brief | default: "AI-Native Product Architect. Frontier Web3 Research · Tooling · Design Systems." }}</p>
 
     {% if site.paginate %}
       {% assign posts = paginator.posts %}
@@ -20,29 +13,20 @@ layout: base
     {% endif %}
 
     {% if posts.size > 0 %}
-    <section class="post-grid" id="writing">
-      {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+    <ul class="post-list" id="writing">
+      {% assign date_format = site.minima.date_format | default: "%Y-%m-%d" %}
       {% for post in posts %}
-      <article class="post-card-linear">
-        <a href="{{ post.url | relative_url }}" class="post-card-link">
-          {% if post.image %}
-          <div class="post-card-image">
-            <img src="{{ post.image | relative_url }}" alt="">
-          </div>
+      <li class="post-item">
+        <a href="{{ post.url | relative_url }}" class="post-link">
+          <span class="post-title">{{ post.title | escape }}</span>
+          <span class="post-date">【{{ post.date | date: date_format }}】</span>
+          {% if site.minima.show_excerpts and post.excerpt %}
+          <span class="post-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</span>
           {% endif %}
-          <div class="post-card-body">
-            <span class="post-card-meta">
-              {% if post.category %}{{ post.category }} · {% endif %}{{ post.date | date: date_format }}{% if post.author %} · {{ post.author }}{% endif %}
-            </span>
-            <h3 class="post-card-title">{{ post.title | escape }}</h3>
-            {% if site.minima.show_excerpts and post.excerpt %}
-            <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncate: 140 }}</p>
-            {% endif %}
-          </div>
         </a>
-      </article>
+      </li>
       {% endfor %}
-    </section>
+    </ul>
     {% endif %}
   </div>
 </main>
