@@ -18,6 +18,7 @@
     </nav>
   </div>
   {% if page.banner_text or page.layout == 'home' or page.layout == 'post' %}
-  {% include hero-banner.html text=page.banner_text | default: "Simplicity holds depth — that is truth." %}
+  {% assign banner_text = page.banner_text | default: "Simplicity holds depth — that is truth." %}
+  {% include hero-banner.html text=banner_text %}
   {% endif %}
 </header>
