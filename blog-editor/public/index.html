@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>写博客</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, sans-serif; background: #EFF7F5; color: #2a3a38; margin: 0; padding: 24px; line-height: 1.6; }
+    .container { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 1.5rem; margin: 0 0 24px; color: #2a3a38; }
+    .card { background: #fff; border-radius: 12px; padding: 28px; box-shadow: 0 4px 24px rgba(42,58,56,0.08); margin-bottom: 20px; }
+    label { display: block; font-size: 0.9rem; font-weight: 500; margin-bottom: 6px; color: #5a6a67; }
+    input, select, textarea { width: 100%; padding: 12px 14px; border: 1px solid #B8F3EB; border-radius: 8px; font-size: 1rem; font-family: inherit; }
+    input:focus, textarea:focus { outline: none; border-color: #80D0ED; }
+    textarea { min-height: 280px; resize: vertical; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .btn { padding: 12px 24px; border: none; border-radius: 8px; font-size: 1rem; font-weight: 500; cursor: pointer; }
+    .btn-primary { background: #80D0ED; color: #2a3a38; }
+    .btn-primary:hover { background: #5a9bb8; color: #fff; }
+    .btn-secondary { background: #EFF7F5; color: #5a6a67; margin-left: 12px; }
+    .btn-secondary:hover { background: #B8F3EB; }
+    .actions { margin-top: 24px; display: flex; align-items: center; gap: 12px; }
+    .msg { margin-top: 16px; padding: 12px; border-radius: 8px; font-size: 0.9rem; }
+    .msg.success { background: #B8F3EB; color: #2a3a38; }
+    .msg.error { background: #F9DDDD; color: #8b3a3a; }
+    .hint { font-size: 0.85rem; color: #5a6a67; margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>写博客</h1>
+    <div class="card">
+      <form id="postForm">
+        <div class="row">
+          <div>
+            <label for="title">标题</label>
+            <input type="text" id="title" name="title" required placeholder="文章标题">
+          </div>
+          <div>
+            <label for="category">分类</label>
+            <select id="category" name="category">
+              <option value="Writing">Writing</option>
+              <option value="Research">Research</option>
+              <option value="Design">Design</option>
+              <option value="Web3">Web3</option>
+            </select>
+          </div>
+        </div>
+        <div style="margin-top: 16px;">
+          <label for="excerpt">摘要（可选，显示在首页卡片）</label>
+          <input type="text" id="excerpt" name="excerpt" placeholder="简短描述...">
+        </div>
+        <div style="margin-top: 16px;">
+          <label for="content">正文 <span class="hint">支持 Markdown</span></label>
+          <textarea id="content" name="content" required placeholder="在这里写正文..."></textarea>
+        </div>
+        <div class="actions">
+          <button type="submit" class="btn btn-primary">保存到本地</button>
+          <button type="button" id="publishBtn" class="btn btn-secondary">保存并推送到 GitHub</button>
+        </div>
+        <div id="msg"></div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('postForm');
+    const publishBtn = document.getElementById('publishBtn');
+    const msgEl = document.getElementById('msg');
+
+    function showMsg(text, type) {
+      msgEl.textContent = text;
+      msgEl.className = 'msg ' + type;
+      msgEl.style.display = 'block';
+      setTimeout(() => { msgEl.style.display = 'none'; }, 4000);
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = {
+        title: document.getElementById('title').value,
+        content: document.getElementById('content').value,
+        category: document.getElementById('category').value,
+        excerpt: document.getElementById('excerpt').value || undefined
+      };
+      try {
+        const res = await fetch('/api/post', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+        const json = await res.json();
+        if (json.error) throw new Error(json.error);
+        showMsg('已保存到 _posts/' + json.filename, 'success');
+        publishBtn.dataset.filename = json.filename;
+        publishBtn.dataset.title = data.title;
+      } catch (err) {
+        showMsg(err.message, 'error');
+      }
+    });
+
+    publishBtn.addEventListener('click', async () => {
+      const filename = publishBtn.dataset.filename;
+      const title = publishBtn.dataset.title;
+      if (!filename) { showMsg('请先点击「保存到本地」', 'error'); return; }
+      try {
+        const res = await fetch('/api/publish', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ filename, title }) });
+        const json = await res.json();
+        if (json.error) throw new Error(json.error);
+        showMsg('已推送到 GitHub，网站将自动更新', 'success');
+      } catch (err) {
+        showMsg(err.message, 'error');
+      }
+    });
+  </script>
+</body>
+</html>

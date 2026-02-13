@@ -1,15 +1,43 @@
 <script>
 (function() {
-  var path = window.location.pathname;
-  if (path !== '/' && path !== '/index.html' && path !== '') return;
+  var path = window.location.pathname.replace(/\/$/, '') || '/';
   var stored = localStorage.getItem('lang');
-  if (stored) return;
+
+  function redirectToEn() {
+    if (path === '/' || path === '' || path === '/index.html') {
+      window.location.replace('/en/');
+    } else if (path === '/about') {
+      window.location.replace('/en/about/');
+    } else if (!path.startsWith('/en')) {
+      window.location.replace('/en' + path + '/');
+    }
+  }
+  function redirectToZh() {
+    if (path === '/en' || path === '/en/') {
+      window.location.replace('/');
+    } else if (path === '/en/about') {
+      window.location.replace('/about/');
+    } else if (path.startsWith('/en')) {
+      window.location.replace(path.replace(/^\/en/, '') || '/');
+    }
+  }
+
+  if (stored === 'en') {
+    if (path === '/' || path === '' || path === '/index.html' || path === '/about') redirectToEn();
+    return;
+  }
+  if (stored === 'zh') {
+    if (path.startsWith('/en')) redirectToZh();
+    return;
+  }
+
+  if (path !== '/' && path !== '' && path !== '/index.html') return;
   var pref = navigator.language || navigator.userLanguage || '';
   if (pref.toLowerCase().indexOf('zh') === 0) {
     localStorage.setItem('lang', 'zh');
     return;
   }
   localStorage.setItem('lang', 'en');
-  window.location.replace('/en/');
+  redirectToEn();
 })();
 </script>

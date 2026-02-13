@@ -5,7 +5,7 @@ body { color: #3d4d4a; line-height: 1.7; font-family: "Lato", -apple-system, san
 html[lang="zh-CN"] body,
 html[lang="zh-CN"] .hero-banner-text,
 html[lang="zh-CN"] .site-title,
-html[lang="zh-CN"] .site-nav .page-link { font-family: "Noto Serif SC", "Noto Sans SC", serif; }
+html[lang="zh-CN"] .site-nav .page-link { font-family: "ZCOOL XiaoWei", "Noto Sans SC", sans-serif; }
 a { color: #80D0ED; transition: color 0.15s ease; }
 a:hover { color: #5a9bb8; }
 
@@ -15,7 +15,7 @@ header.site-header, header.site-header .wrapper, .site-header, .site-header .wra
 .site-header .wrapper { display: flex; justify-content: space-between; align-items: center; margin: 0 auto; padding: 0 32px; max-width: 1200px; width: 100%; height: 66px; box-sizing: border-box; }
 .site-header .hero-banner { margin-top: 0; margin-bottom: 0; }
 .site-brand { display: flex; align-items: center; gap: 8px; text-decoration: none; color: inherit; }
-.site-avatar { width: 24px; height: 24px; border-radius: 50%; object-fit: cover; }
+.site-avatar { width: 24px; height: 24px; min-width: 24px; max-width: 24px; flex-shrink: 0; border-radius: 50%; object-fit: cover; display: block; }
 .site-title { font-size: 1rem; font-weight: 600; letter-spacing: -0.02em; color: #2a3a38; }
 .site-nav { display: flex; align-items: center; gap: 24px; margin-left: auto; flex-shrink: 0; }
 .site-nav .page-link { color: #5a6a67; font-size: 0.875rem; text-decoration: none; }
