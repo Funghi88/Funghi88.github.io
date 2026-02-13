@@ -52,14 +52,23 @@ header.site-header .wrapper,
 .site-header {
   border-top: none;
   border-bottom: none;
-  padding: 16px 0;
+  padding: 16px 0 0 0;
   margin-bottom: 0;
+  min-height: unset;
+  line-height: normal;
 }
 
 .site-header .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
+  padding: 0 30px 0;
+}
+
+.site-header .hero-banner {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .site-brand {
