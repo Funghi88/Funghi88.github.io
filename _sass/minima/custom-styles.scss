@@ -14,8 +14,15 @@ $accent-aqua: #B8F3EB;
 $accent-pink: #F9DDDD;
 
 // ——— Base ———
+html,
+body,
+main,
+main .wrapper,
+.page-content {
+  background-color: #EFF7F5 !important;
+}
+
 body {
-  background-color: $bg;
   color: $text;
   line-height: 1.7;
 }
