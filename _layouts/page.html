@@ -3,9 +3,11 @@ layout: default
 ---
 
 <article class="page">
+  {% unless page.banner_text %}
   <header class="page-header">
     <h1 class="page-title">{{ page.title | escape }}</h1>
   </header>
+  {% endunless %}
   <div class="page-content-inner">
     {{ content }}
   </div>
