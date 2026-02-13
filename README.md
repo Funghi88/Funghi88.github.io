@@ -1,31 +1,22 @@
-# Annabelle Lee  
-### AI-Native Product Architect  
-Frontier Web3 Research · Tooling · Design Systems  
+# Annabelle Lee — Personal Site
 
----
+Personal blog and portfolio. Built with Jekyll, hosted on GitHub Pages.
 
-I build structured systems that compress complexity across emerging ecosystems.
+**Live:** https://funghi88.github.io
 
-Currently focused on Web3 infrastructure research and AI-assisted tooling.
+## Writing a New Post
 
----
+1. Create a new file in `_posts/` with format: `YYYY-MM-DD-slug.md`
+2. Add front matter at the top:
+   ```yaml
+   ---
+   layout: post
+   title: "Your Post Title"
+   date: YYYY-MM-DD
+   ---
+   ```
+3. Write in Markdown below the front matter
+4. Commit and push — GitHub Pages auto-deploys
 
-## Work
-
-- Protocol Intelligence  
-- Research Compression Frameworks  
-- Open Source Tooling  
-- Design-Forward Analytical Systems  
-
----
-
-## Writing
-
-Long-form research essays and structured insights coming soon.
-
----
-
-## Connect
-
-GitHub: https://github.com/Funghi88  
-X: https://x.com/miccakitt  
+- **Template:** Copy `post-template.md` → `_posts/YYYY-MM-DD-your-slug.md`, edit, push
+- **Design:** See `DESIGN-REFERENCES.md` for aesthetic direction
