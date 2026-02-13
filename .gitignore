@@ -1,1 +1,8 @@
 blog-editor/node_modules/
+
+# Internal docs (not in repo)
+about.md
+BLOG-WORKFLOW.md
+DESIGN-FRAMEWORK.md
+DESIGN-REFERENCES.md
+DESIGN-SPEC.md
