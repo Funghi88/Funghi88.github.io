@@ -1,6 +1,6 @@
 <div id="search-overlay" class="search-overlay" aria-hidden="true">
-  <div class="search-overlay-backdrop">
-    <div class="search-overlay-content">
+  <div class="search-overlay-backdrop"></div>
+  <div class="search-overlay-content">
       <div class="search-overlay-header">
         <span class="search-overlay-title">Search articles...</span>
         <button type="button" class="search-overlay-close" aria-label="Close">×</button>
@@ -8,7 +8,6 @@
       <input type="search" id="search-input" class="search-input" placeholder="Type to search articles..." autocomplete="off">
       <div id="search-results" class="search-results"></div>
       <p class="search-overlay-hint">/ to search ESC to close ↑↓ to navigate Enter to select</p>
-    </div>
   </div>
 </div>
 
@@ -74,9 +73,7 @@
       openSearch();
     }
   });
-  overlay.querySelector('.search-overlay-backdrop')?.addEventListener('click', function(e) {
-    if (e.target === this) closeSearch();
-  });
+  overlay.querySelector('.search-overlay-backdrop')?.addEventListener('click', closeSearch);
   input.addEventListener('input', function() { performSearch(this.value); });
   input.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') { e.preventDefault(); closeSearch(); return; }
