@@ -12,6 +12,7 @@ $link: #80D0ED;
 $link-hover: #5a9bb8;
 $accent-aqua: #B8F3EB;
 $accent-pink: #F9DDDD;
+$accent-rose: #F0BBDD;
 
 // ——— Base ———
 html,
@@ -36,10 +37,12 @@ a:hover {
   color: $link-hover;
 }
 
-// ——— Header ———
+// ——— Header (accent-rose) ———
+header.site-header,
+header.site-header .wrapper,
 .site-header,
 .site-header .wrapper {
-  background-color: #F0BBDD !important;
+  background-color: $accent-rose !important;
 }
 
 .site-header {
