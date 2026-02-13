@@ -28,11 +28,12 @@ a:hover {
   color: $link-hover;
 }
 
-// ——— Header (Tw93: title | nav) ———
+// ——— Header (Tw93/Linear: single row, compact) ———
 .site-header {
+  background-color: $bg;
   border-top: none;
-  border-bottom: 1px solid $accent-aqua;
-  padding: 20px 0;
+  border-bottom: 1px solid rgba($heading, 0.12);
+  padding: 16px 0;
 }
 
 .site-header .wrapper {
@@ -44,20 +45,20 @@ a:hover {
 .site-brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   text-decoration: none;
   color: inherit;
 }
 
 .site-avatar {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .site-title {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: -0.02em;
   color: $heading;
@@ -65,12 +66,13 @@ a:hover {
 
 .site-nav {
   display: flex;
-  gap: 24px;
+  align-items: center;
+  gap: 20px;
 }
 
 .site-nav .page-link {
   color: $muted;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   text-decoration: none;
 }
 
