@@ -17,7 +17,7 @@
       {% endif %}
     </nav>
   </div>
-  {% if page.layout == 'home' %}
+  {% if page.banner_text or page.layout == 'home' %}
   {% include hero-banner.html text=page.banner_text %}
   {% endif %}
 </header>
