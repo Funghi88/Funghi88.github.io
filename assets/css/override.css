@@ -5,7 +5,7 @@ body { color: #3d4d4a; line-height: 1.7; font-family: "Lato", -apple-system, san
 html[lang="zh-CN"] body,
 html[lang="zh-CN"] .hero-banner-text,
 html[lang="zh-CN"] .site-title,
-html[lang="zh-CN"] .site-nav .page-link { font-family: "ZCOOL XiaoWei", "Noto Sans SC", sans-serif; }
+html[lang="zh-CN"] .site-nav .page-link { font-family: "LXGW WenKai Screen", "Noto Sans SC", sans-serif; }
 a { color: #80D0ED; transition: color 0.15s ease; }
 a:hover { color: #5a9bb8; }
 
