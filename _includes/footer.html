@@ -3,3 +3,17 @@
     <p><a href="https://github.com/Funghi88">GitHub</a> · <a href="https://x.com/miccakitt">X</a></p>
   </div>
 </footer>
+<script>
+(function() {
+  var writingLink = document.querySelector('a.page-link[href*="#writing"]');
+  if (!writingLink) return;
+  writingLink.addEventListener('click', function(e) {
+    var target = document.getElementById('writing');
+    if (target && (window.location.pathname === '/' || window.location.pathname === '' || window.location.pathname.endsWith('/index.html'))) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      history.replaceState(null, '', '/#writing');
+    }
+  });
+})();
+</script>
