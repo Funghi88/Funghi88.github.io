@@ -142,7 +142,7 @@ header.site-header .wrapper,
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 90px 24px 24px;
+  padding: 150px 24px 24px;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.2s, visibility 0.2s;
@@ -409,6 +409,15 @@ main .wrapper {
 
 .site-footer a:hover {
   color: $link-hover;
+}
+
+// ——— Content paper (A4-style for About, posts) ———
+.content-paper {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba($heading, 0.08);
+  padding: 40px 48px;
+  margin-bottom: 32px;
 }
 
 // ——— Post page ———
