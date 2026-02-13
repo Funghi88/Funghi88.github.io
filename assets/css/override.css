@@ -56,10 +56,13 @@ main .wrapper { margin-left: auto; margin-right: auto; padding-left: 32px; paddi
 
 /* Content paper (About, posts) */
 .content-paper { background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(42,58,56,0.08); padding: 40px 48px; margin-bottom: 32px; }
+.post-cover { margin: -40px -48px 32px -48px; overflow: hidden; border-radius: 12px 12px 0 0; }
+.post-cover img { width: 100%; height: auto; display: block; vertical-align: top; }
 .post .post-header { padding: 32px 0 24px; text-align: left; border-bottom: 1px solid #B8F3EB; }
 .post .post-header .post-title { font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; color: #2a3a38; background: linear-gradient(90deg, rgba(184,243,235,0.7) 0%, transparent 100%); padding: 0.1em 0.2em 0.1em 0; margin-left: -0.2em; }
 .post .post-meta { font-size: 0.9rem; color: #5a6a67; }
 .post-content { padding: 24px 0; }
+.post-content img { max-width: 100%; height: auto; margin: 16px 0; border-radius: 8px; }
 .post-footer { padding-top: 24px; border-top: 1px solid #B8F3EB; }
 .post-footer .post-back { font-size: 0.95rem; color: #5a6a67; }
 .post-footer .post-back:hover { color: #2a3a38; }

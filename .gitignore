@@ -1,7 +1,9 @@
 blog-editor/node_modules/
 
+# Image backups (keep original locally, don't push)
+**/cover-original.*
+
 # Internal docs (not in repo)
-about.md
 BLOG-WORKFLOW.md
 DESIGN-FRAMEWORK.md
 DESIGN-REFERENCES.md
