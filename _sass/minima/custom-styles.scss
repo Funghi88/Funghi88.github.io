@@ -1,49 +1,255 @@
-// Light palette — soft pastels
-// Accent: #80D0ED (blue) | #F0BBDD (rose) | #B8F3EB (aqua)
+// Linear Now + Dense Discovery aesthetics — our palette
+// #EFF7F5 | #3d4d4a | #2a3a38 | #80D0ED | #B8F3EB | #F9DDDD
 
 @charset "utf-8";
 
-// Main headings — soft aqua highlight
-.page-heading,
-.post-title {
-  background: linear-gradient(
-    90deg,
-    rgba(184, 243, 235, 0.6) 0%,
-    transparent 100%
-  );
+// ——— Header (Linear-style minimal) ———
+.site-header {
+  border-top: none;
+  border-bottom: 1px solid #d4e8e5;
+  padding: 24px 0;
+}
+
+.site-header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.site-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.site-nav .page-link {
+  color: #5a6a67;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.site-nav .page-link:hover {
+  color: #2a3a38;
+}
+
+// ——— Hero (Linear Now style: title + filter + cards) ———
+.hero-section {
+  padding: 40px 0 32px;
+}
+
+.hero-brief {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.hero-avatar {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #d4e8e5;
+}
+
+.hero-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: #5a6a67;
+  padding: 4px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.hero-avatar-placeholder code {
+  font-size: 0.65rem;
+  background: rgba(0,0,0,0.05);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 0 0 8px 0;
+  background: linear-gradient(90deg, rgba(184, 243, 235, 0.6) 0%, transparent 100%);
   padding: 0.1em 0.2em 0.1em 0;
-  margin-left: -0.2em;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  display: inline-block;
 }
 
-// Post links in list
-.post-link {
-  font-weight: 700;
-  letter-spacing: -0.02em;
+.hero-brief-text {
+  font-size: 0.95rem;
+  color: #5a6a67;
+  line-height: 1.5;
+  margin: 0;
 }
 
-.post-link:hover {
+// ——— Writing section (Linear Now card grid) ———
+.writing-section {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid #d4e8e5;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.filter-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.filter-link {
+  color: #5a6a67;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.filter-link:hover,
+.filter-link.active {
+  color: #2a3a38;
+}
+
+// Post cards (Linear Now style)
+.post-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-card {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d4e8e5;
+}
+
+.post-card:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.post-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-card-link:hover .post-card-title {
   color: #5a9bb8;
 }
 
-// Post metadata — muted
-.post-meta {
+.post-card-meta {
+  font-size: 0.85rem;
   color: #5a6a67;
-  font-size: 0.9em;
+  display: block;
+  margin-bottom: 6px;
 }
 
-// Body — generous line height
+.post-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+  transition: color 0.15s ease;
+}
+
+.post-card-excerpt {
+  font-size: 0.95rem;
+  color: #5a6a67;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.home-footer {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid #d4e8e5;
+  font-size: 0.9rem;
+  color: #5a6a67;
+}
+
+.home-footer a {
+  color: #80D0ED;
+}
+
+.home-footer a:hover {
+  color: #5a9bb8;
+}
+
+// ——— Post page ———
+.post .post-header {
+  padding: 32px 0 24px;
+  text-align: left;
+  border-bottom: 1px solid #d4e8e5;
+}
+
+.post-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  background: linear-gradient(90deg, rgba(184, 243, 235, 0.6) 0%, transparent 100%);
+  padding: 0.1em 0.2em 0.1em 0;
+  margin-left: -0.2em;
+}
+
+.post .post-meta {
+  font-size: 0.9rem;
+  color: #5a6a67;
+}
+
+.post-content {
+  padding: 24px 0;
+}
+
+.post-footer {
+  padding-top: 24px;
+  border-top: 1px solid #d4e8e5;
+}
+
+.post-back {
+  font-size: 0.95rem;
+  color: #5a6a67;
+}
+
+.post-back:hover {
+  color: #2a3a38;
+}
+
+// ——— Base ———
 body {
   line-height: 1.7;
 }
 
-// Links
 a {
   transition: color 0.15s ease;
-}
-
-// Site nav
-.site-nav .page-link:hover {
-  color: #2a3a38;
 }

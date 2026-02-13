@@ -1,0 +1,58 @@
+---
+layout: base
+---
+
+<main class="page-content">
+  <div class="wrapper">
+    {% if site.paginate %}
+      {% assign posts = paginator.posts %}
+    {% else %}
+      {% assign posts = site.posts %}
+    {% endif %}
+
+    <section class="hero-section">
+      <div class="hero-brief">
+        <div class="hero-avatar">
+          <img src="{{ '/assets/avatar.jpg' | relative_url }}" alt="Annabelle Lee" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <div class="hero-avatar-placeholder" style="display:none;">Add your photo to <code>assets/avatar.jpg</code></div>
+        </div>
+        <div class="hero-text">
+          <h1 class="hero-title">Annabelle Lee's Space</h1>
+          <p class="hero-brief-text">{{ page.brief | default: "AI-Native Product Architect. Frontier Web3 Research · Tooling · Design Systems." }}</p>
+        </div>
+      </div>
+    </section>
+
+    {% if posts.size > 0 %}
+    <section class="writing-section" id="writing">
+      <div class="section-header">
+        <h2 class="section-title">Writing</h2>
+        <nav class="filter-nav" aria-label="Filter posts">
+          <a href="#" class="filter-link active">All</a>
+        </nav>
+      </div>
+
+      <ul class="post-cards">
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        {% for post in posts %}
+        <li class="post-card">
+          <a href="{{ post.url | relative_url }}" class="post-card-link">
+            <span class="post-card-meta">
+              {% if post.category %}{{ post.category }} · {% endif %}{{ post.date | date: date_format }}
+            </span>
+            <h3 class="post-card-title">{{ post.title | escape }}</h3>
+            {% if site.minima.show_excerpts and post.excerpt %}
+            <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+            {% endif %}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    <footer class="home-footer">
+      <a href="https://github.com/Funghi88">GitHub</a> · <a href="https://x.com/miccakitt">X</a>
+    </footer>
+  </div>
+</main>

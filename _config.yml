@@ -1,9 +1,10 @@
 remote_theme: jekyll/minima
 minima:
   skin: classic
-title: Annabelle Lee
+  show_excerpts: true
+title: Annabelle Lee's Space
 description: AI-Native Research & Web3 Systems
 author: Annabelle Lee
 baseurl: ""
 url: "https://funghi88.github.io"
-exclude: ["DESIGN-REFERENCES.md", "DESIGN-FRAMEWORK.md", "post-template.md", "DESIGN-SPEC.md"]
+exclude: ["DESIGN-REFERENCES.md", "DESIGN-FRAMEWORK.md", "post-template.md", "DESIGN-SPEC.md", "README.md"]
