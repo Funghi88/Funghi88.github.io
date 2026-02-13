@@ -13,20 +13,31 @@ layout: base
     {% endif %}
 
     {% if posts.size > 0 %}
-    <ul class="post-list" id="writing">
-      {% assign date_format = site.minima.date_format | default: "%Y-%m-%d" %}
+    <div class="post-cards" id="writing">
+      {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
       {% for post in posts %}
-      <li class="post-item">
-        <a href="{{ post.url | relative_url }}" class="post-link">
-          <span class="post-title">{{ post.title | escape }}</span>
-          <span class="post-date">【{{ post.date | date: date_format }}】</span>
-          {% if site.minima.show_excerpts and post.excerpt %}
-          <span class="post-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</span>
+      <article class="post-card">
+        <a href="{{ post.url | relative_url }}" class="post-card-link">
+          {% if post.image %}
+          <div class="post-card-image">
+            <img src="{{ post.image | relative_url }}" alt="">
+          </div>
+          {% else %}
+          <div class="post-card-image post-card-image-placeholder"></div>
           {% endif %}
+          <div class="post-card-body">
+            <span class="post-card-meta">
+              {% assign cat = post.category | default: post.categories | first %}{% if cat %}{{ cat }} · {% endif %}{{ post.date | date: date_format }}
+            </span>
+            <h3 class="post-card-title">{{ post.title | escape }}</h3>
+            {% if site.minima.show_excerpts and post.excerpt %}
+            <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncate: 140 }}</p>
+            {% endif %}
+          </div>
         </a>
-      </li>
+      </article>
       {% endfor %}
-    </ul>
+    </div>
     {% endif %}
   </div>
 </main>

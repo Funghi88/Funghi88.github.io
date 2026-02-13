@@ -3,6 +3,7 @@ layout: post
 title: "Your Post Title Here"
 date: YYYY-MM-DD
 category: Research
+# image: /assets/your-image.jpg  # optional card image
 ---
 
 Your content goes here. Write in Markdown.
