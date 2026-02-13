@@ -1,9 +1,20 @@
+{% include search-overlay.html %}
 <footer class="site-footer">
   <div class="wrapper">
     <p><a href="https://github.com/Funghi88">GitHub</a> · <a href="https://x.com/miccakitt">X</a></p>
   </div>
 </footer>
 <script>
+(function() {
+  var enBtn = document.querySelector('a[data-translate]');
+  if (enBtn) {
+    enBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var u = encodeURIComponent(window.location.href);
+      window.open('https://translate.google.com/translate?hl=en&sl=auto&tl=en&u=' + u, '_blank', 'noopener');
+    });
+  }
+})();
 (function() {
   var writingLink = document.querySelector('a.page-link[href*="#writing"]');
   if (!writingLink) return;

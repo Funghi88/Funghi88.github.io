@@ -1,0 +1,66 @@
+<div id="search-overlay" class="search-overlay" aria-hidden="true">
+  <div class="search-overlay-backdrop">
+    <div class="search-overlay-content">
+      <input type="search" id="search-input" class="search-input" placeholder="Search..." autocomplete="off">
+      <div id="search-results" class="search-results"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var data = [
+    {% for post in site.posts %}
+    {"t":{{ post.title | jsonify }},"u":{{ post.url | relative_url | jsonify }},"e":{{ post.excerpt | default: "" | strip_html | truncate: 120 | jsonify }}}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+
+  var overlay = document.getElementById('search-overlay');
+  var input = document.getElementById('search-input');
+  var results = document.getElementById('search-results');
+
+  function openSearch() {
+    overlay.setAttribute('aria-hidden', 'false');
+    overlay.classList.add('search-overlay-open');
+    input.value = '';
+    input.focus();
+    results.innerHTML = '';
+  }
+
+  function closeSearch() {
+    overlay.setAttribute('aria-hidden', 'true');
+    overlay.classList.remove('search-overlay-open');
+  }
+
+  function performSearch(q) {
+    q = (q || '').toLowerCase().trim();
+    results.innerHTML = '';
+    if (!q) return;
+    var matches = data.filter(function(p) {
+      var t = (p.t || '').toLowerCase();
+      var e = (p.e || '').toLowerCase();
+      return t.indexOf(q) >= 0 || e.indexOf(q) >= 0;
+    });
+    matches.slice(0, 8).forEach(function(p) {
+      var a = document.createElement('a');
+      a.href = p.u;
+      a.className = 'search-result-item';
+      a.innerHTML = '<strong>' + p.t + '</strong><span>' + p.e + '</span>';
+      results.appendChild(a);
+    });
+  }
+
+  var searchBtn = document.querySelector('.search-toggle');
+  if (searchBtn) searchBtn.addEventListener('click', openSearch);
+  document.addEventListener('keydown', function(e) {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); openSearch(); }
+  });
+  overlay.querySelector('.search-overlay-backdrop')?.addEventListener('click', function(e) {
+    if (e.target === this) closeSearch();
+  });
+  input.addEventListener('input', function() { performSearch(this.value); });
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeSearch();
+  });
+})();
+</script>
