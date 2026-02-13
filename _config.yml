@@ -1,4 +1,4 @@
-remote_theme: jekyll/minima
+theme: minima
 minima:
   skin: classic
   show_excerpts: true
@@ -7,7 +7,7 @@ description: AI-Native Research & Web3 Systems
 author: Annabelle Lee
 baseurl: ""
 url: "https://funghi88.github.io"
-exclude: ["DESIGN-REFERENCES.md", "DESIGN-FRAMEWORK.md", "post-template.md", "DESIGN-SPEC.md", "README.md", "vendor", ".bundle", "node_modules", ".git", ".github"]
+exclude: ["DESIGN-REFERENCES.md", "DESIGN-FRAMEWORK.md", "post-template.md", "DESIGN-SPEC.md", "README.md"]
 
 # Giscus comments (https://giscus.app)
 giscus:
