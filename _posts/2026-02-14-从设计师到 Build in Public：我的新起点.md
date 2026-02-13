@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "从设计师到 Build in Public：我的新起点"
-date: 2026-02-15
+date: 2026-02-13
 category: Writing
 excerpt: "一个非计算机背景的设计师，如何通过 AI 协作进入 Web3，并决定公开构建。"
 image: /assets/images/posts/2026-02-14-build-in-public/cover.jpg
