@@ -6,9 +6,12 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
     {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+    {% assign words = page.content | number_of_words %}
+    {% assign read_time = words | divided_by: 200 | at_least: 1 %}
     <p class="post-meta">
       {{ page.date | date: date_format }}
       {% if page.author %} · {{ page.author }}{% endif %}
+      · {{ read_time }} min read
     </p>
   </header>
 

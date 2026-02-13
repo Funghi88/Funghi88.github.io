@@ -1,0 +1,7 @@
+---
+---
+
+User-agent: *
+Allow: /
+
+Sitemap: https://funghi88.github.io/sitemap.xml

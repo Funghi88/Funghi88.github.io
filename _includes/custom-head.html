@@ -3,3 +3,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.css">
 <link rel="stylesheet" href="{{ '/assets/css/override.css' | relative_url }}">
+{% if site.analytics.plausible %}
+<script defer data-domain="{{ site.analytics.plausible }}" src="https://plausible.io/js/script.js"></script>
+{% endif %}

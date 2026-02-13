@@ -9,6 +9,14 @@ baseurl: ""
 url: "https://funghi88.github.io"
 exclude: ["DESIGN-REFERENCES.md", "DESIGN-FRAMEWORK.md", "post-template.md", "DESIGN-SPEC.md", "README.md", "BLOG-WORKFLOW.md", "blog-editor"]
 
+# SEO (jekyll-seo-tag)
+twitter:
+  username: miccakitt
+
+# Analytics - set domain to enable (e.g. plausible: "funghi88.github.io")
+analytics:
+  plausible: ""
+
 # Giscus comments (https://giscus.app)
 giscus:
   repo: "Funghi88/Funghi88.github.io"
