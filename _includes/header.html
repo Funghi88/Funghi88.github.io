@@ -10,4 +10,7 @@
       <a class="page-link" href="https://x.com/miccakitt">X</a>
     </nav>
   </div>
+  {% if page.layout == 'home' %}
+  {% include hero-banner.html text=page.banner_text %}
+  {% endif %}
 </header>
