@@ -8,3 +8,10 @@ author: Annabelle Lee
 baseurl: ""
 url: "https://funghi88.github.io"
 exclude: ["DESIGN-REFERENCES.md", "DESIGN-FRAMEWORK.md", "post-template.md", "DESIGN-SPEC.md", "README.md"]
+
+# Giscus comments (https://giscus.app) - enable Discussions on repo first, then get IDs from giscus.app
+giscus:
+  repo: "Funghi88/Funghi88.github.io"
+  repo_id: ""          # Get from giscus.app after enabling Discussions
+  category: "Comments"
+  category_id: ""      # Get from giscus.app
