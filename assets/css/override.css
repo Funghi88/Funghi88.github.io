@@ -17,6 +17,14 @@
 @keyframes cursor-blink {
   50% { opacity: 0; }
 }
+.site-footer {
+  text-align: center;
+  padding: 24px 0;
+}
+.site-footer .wrapper {
+  display: flex;
+  justify-content: center;
+}
 .site-footer-links {
   display: flex;
   align-items: center;
@@ -33,12 +41,9 @@
 }
 .site-footer-links a:hover,
 .site-footer-heart:hover {
-  color: #5a9bb8;
+  color: #5a9bb8 !important;
 }
 .site-footer-links svg {
   display: block;
   vertical-align: middle;
-}
-.site-footer {
-  text-align: center;
 }
