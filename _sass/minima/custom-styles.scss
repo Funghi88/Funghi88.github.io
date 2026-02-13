@@ -11,6 +11,7 @@ $muted: #5a6a67;
 $link: #80D0ED;
 $link-hover: #5a9bb8;
 $accent-aqua: #B8F3EB;
+$accent-pink: #F9DDDD;
 
 // ——— Base ———
 body {
@@ -30,7 +31,7 @@ a:hover {
 
 // ——— Header (Tw93/Linear: single row, compact) ———
 .site-header {
-  background-color: $bg;
+  background-color: $accent-pink;
   border-top: none;
   border-bottom: 1px solid rgba($heading, 0.12);
   padding: 16px 0;
