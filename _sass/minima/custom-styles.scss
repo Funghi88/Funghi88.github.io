@@ -41,11 +41,25 @@ a:hover {
   align-items: center;
 }
 
+.site-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .site-title {
   font-size: 1.125rem;
   font-weight: 600;
   letter-spacing: -0.02em;
-  text-decoration: none;
   color: $heading;
 }
 
