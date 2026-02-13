@@ -1,4 +1,4 @@
-// Tw93 framework + Linear Now aesthetic — DESIGN-SPEC palette
+// DESIGN-SPEC palette
 // bg #EFF7F5 | text #3d4d4a | heading #2a3a38 | muted #5a6a67
 // link #80D0ED | link-hover #5a9bb8 | accent-aqua #B8F3EB | accent-pink #F9DDDD
 
@@ -15,7 +15,7 @@ $accent-pink: #F9DDDD;
 
 // ——— Base ———
 body {
-  background-color: $bg;
+  background-color: $accent-pink;
   color: $text;
   line-height: 1.7;
 }
@@ -29,9 +29,9 @@ a:hover {
   color: $link-hover;
 }
 
-// ——— Header (Tw93/Linear: single row, compact) ———
+// ——— Header ———
 .site-header {
-  background-color: $accent-pink;
+  background-color: #F9DDDD !important;
   border-top: none;
   border-bottom: 1px solid rgba($heading, 0.12);
   padding: 16px 0;
@@ -81,7 +81,7 @@ a:hover {
   color: $heading;
 }
 
-// ——— Home (Tw93: tagline + post list) ———
+// ——— Home ———
 .page-content {
   padding: 32px 0;
 }
