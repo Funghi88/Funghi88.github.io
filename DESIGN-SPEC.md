@@ -60,6 +60,29 @@ site
 
 ---
 
+## How to Add a New Post
+
+Jekyll is file-based — no admin portal. To add a blog post:
+
+1. Create a new file in `_posts/` with format: `YYYY-MM-DD-slug.md`
+2. Add front matter and content:
+
+```yaml
+---
+layout: post
+title: "Your Post Title"
+date: 2026-02-13
+category: Research
+---
+```
+
+3. Write in Markdown below the front matter
+4. Commit and push — GitHub Pages auto-deploys
+
+**Template:** Copy `post-template.md` → `_posts/YYYY-MM-DD-your-slug.md`, edit, push.
+
+---
+
 ## Related
 
 - **DESIGN-FRAMEWORK.md** — Full collaboration doc: ASCII wireframes, swimlanes, state machines, sequence diagrams, token table, component tree, constraint checklist. Dense Discovery + Linear aesthetics with our palette.

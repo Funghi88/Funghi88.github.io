@@ -2,6 +2,7 @@
 layout: post
 title: "Your Post Title Here"
 date: YYYY-MM-DD
+category: Research
 ---
 
 Your content goes here. Write in Markdown.
