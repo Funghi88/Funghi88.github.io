@@ -37,8 +37,12 @@ a:hover {
 }
 
 // ——— Header ———
-.site-header {
+.site-header,
+.site-header .wrapper {
   background-color: #F0BBDD !important;
+}
+
+.site-header {
   border-top: none;
   border-bottom: 1px solid rgba($heading, 0.12);
   padding: 16px 0;
