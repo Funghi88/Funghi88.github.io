@@ -53,9 +53,9 @@ header.site-header .wrapper,
 .site-header {
   border-top: none;
   border-bottom: none;
-  padding: 16px 0 0 0;
+  padding: 0;
   margin-bottom: 0;
-  min-height: unset;
+  min-height: 56px;
   line-height: normal;
   width: 100%;
 }
@@ -65,10 +65,11 @@ header.site-header .wrapper,
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 18px 32px;
   max-width: 1200px;
   width: 100%;
   box-sizing: border-box;
+  min-height: 56px;
 }
 
 .site-header .hero-banner {
