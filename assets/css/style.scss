@@ -4,5 +4,23 @@
 
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize",
-  "overrides";
+  "minima/initialize";
+
+// Inline overrides (footer, typewriter, est. 2026)
+.hero-banner-text { font-size: 2rem !important; }
+.hero-banner-text .typing-cursor {
+  display: inline-block; width: 2px; height: 1em; background: #2a3a38;
+  margin-left: 2px; vertical-align: text-bottom; animation: cursor-blink 0.7s step-end infinite;
+}
+.hero-banner-text.typing-done .typing-cursor { display: none; }
+@keyframes cursor-blink { 50% { opacity: 0; } }
+.site-footer { text-align: center; padding: 24px 0; }
+.site-footer .wrapper { display: flex; justify-content: center; }
+.site-footer-links {
+  display: flex; align-items: center; justify-content: center; gap: 20px; margin: 0; flex-wrap: wrap;
+}
+.site-footer-links a, .site-footer-heart, .site-footer-est {
+  color: #2a3a38; transition: color 0.15s ease;
+}
+.site-footer-links a:hover, .site-footer-heart:hover { color: #5a9bb8 !important; }
+.site-footer-links svg { display: block; vertical-align: middle; }
