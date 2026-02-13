@@ -9,10 +9,6 @@ excerpt_en: "A designer with no CS background, how I entered Web3 through AI col
 image: /assets/images/posts/2026-02-14-build-in-public/cover.jpg
 ---
 
-<p class="post-cover">
-  <img src="/assets/images/posts/2026-02-14-build-in-public/cover.jpg" alt="封面" loading="lazy">
-</p>
-
 # 从设计师到 Build in Public：我的新起点
 
 为什么我相信 AI + Web3 会是未来的方向
@@ -239,6 +235,11 @@ It’s structural capability.
 ---
 
 ## My AI Workflow
+
+![Collaboration tools](/assets/images/posts/2026-02-14-build-in-public/协作工具指南%20图1.png)
+![Collaboration tools](/assets/images/posts/2026-02-14-build-in-public/协作工具指南%20图2.png)
+![Collaboration tools](/assets/images/posts/2026-02-14-build-in-public/协作工具指南%20图3.png)
+![Collaboration tools](/assets/images/posts/2026-02-14-build-in-public/协作工具指南%20图4.png)
 
 Recently, I adopted a new workflow:
 

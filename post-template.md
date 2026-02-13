@@ -1,31 +1,50 @@
 ---
 layout: post
-title: "Your Post Title Here"
-# title_en: "English Title"        # 双语时添加，英文首页/文章页用
+title: "中文标题"
+title_en: "English Title"
 date: YYYY-MM-DD
-category: Research
-excerpt: "首页卡片摘要"
-# excerpt_en: "Card excerpt in English"  # 双语时添加
-# image: /assets/your-image.jpg  # optional card image
+category: Writing
+excerpt: "中文摘要，显示在首页卡片。"
+excerpt_en: "English excerpt for home page card."
+image: /assets/images/posts/YYYY-MM-DD-slug/cover.jpg
 ---
 
-Your content goes here. Write in Markdown.
+<!-- 封面：layout 自动从 front matter 的 image 渲染，中英文都显示，无需在正文写 -->
+<!-- 文内图：在中文和英文对应位置各写一遍，否则切换语言时图片会消失 -->
 
-<!-- 双语文章：在英文内容前加下面这行，中文在上、英文在下 -->
+# 中文标题
+
+中文正文开始。用 Markdown 写。
+
+## 第一节
+
+内容...
+
+## 第二节
+
+![图片描述](/assets/images/posts/YYYY-MM-DD-slug/your-image.png)
+
+内容...
+
+---
+
 <!-- lang: en -->
 
 # English Title
-English content...
 
-## Section heading
+English content starts here. Write in Markdown.
 
-- Bullet points
-- Work great
+## Section One
 
-```python
-# Code blocks supported
-def hello():
-    print("Hello from your blog")
-```
+Content...
 
-More content...
+## Section Two
+
+![Image description](/assets/images/posts/YYYY-MM-DD-slug/your-image.png)
+
+Content...
+
+---
+
+<!-- 使用说明：复制到 _posts/，重命名 YYYY-MM-DD-slug.md -->
+<!-- 封面：只填 image，layout 自动渲染。文内图：中英文各写一遍。日期用当天或过去 -->
