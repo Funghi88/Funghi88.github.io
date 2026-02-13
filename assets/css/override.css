@@ -1,7 +1,11 @@
 /* Full design override - DESIGN-SPEC palette */
 html { overflow-x: hidden; scroll-behavior: smooth; }
 html, body, main, main .wrapper, .page-content { background-color: #EFF7F5 !important; }
-body { color: #3d4d4a; line-height: 1.7; }
+body { color: #3d4d4a; line-height: 1.7; font-family: "Lato", -apple-system, sans-serif; }
+html[lang="zh-CN"] body,
+html[lang="zh-CN"] .hero-banner-text,
+html[lang="zh-CN"] .site-title,
+html[lang="zh-CN"] .site-nav .page-link { font-family: "Noto Serif SC", "Noto Sans SC", serif; }
 a { color: #80D0ED; transition: color 0.15s ease; }
 a:hover { color: #5a9bb8; }
 
