@@ -1,11 +1,12 @@
 /* Full design override - DESIGN-SPEC palette */
 html { overflow-x: hidden; scroll-behavior: smooth; }
 html, body, main, main .wrapper, .page-content { background-color: #EFF7F5 !important; }
-body { color: #3d4d4a; line-height: 1.7; font-family: "Lato", -apple-system, sans-serif; }
-html[lang="zh-CN"] body,
-html[lang="zh-CN"] .hero-banner-text,
-html[lang="zh-CN"] .site-title,
-html[lang="zh-CN"] .site-nav .page-link { font-family: "LXGW WenKai Screen", "Noto Sans SC", sans-serif; }
+body { color: #3d4d4a; line-height: 1.7; font-family: "LXGW WenKai Screen", -apple-system, sans-serif; }
+
+/* Post lang blocks: zh by default, en when html[lang="en"] */
+.lang-block.content-en { display: none; }
+html[lang="en"] .lang-block.content-zh { display: none; }
+html[lang="en"] .lang-block.content-en { display: block; }
 a { color: #80D0ED; transition: color 0.15s ease; }
 a:hover { color: #5a9bb8; }
 
@@ -27,7 +28,7 @@ header.site-header, header.site-header .wrapper, .site-header, .site-header .wra
 /* Hero banner */
 .hero-banner { position: relative; width: 100vw; margin: 0 0 0 calc(-50vw + 50%); background: #F0BBDD; min-height: 140px; display: flex; align-items: center; justify-content: center; overflow: hidden; cursor: default; }
 .hero-banner-canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
-.hero-banner-text { position: relative; z-index: 1; color: #2a3a38; font-family: "Lato", -apple-system, sans-serif; font-size: 2rem !important; font-weight: 500; text-align: center; margin: 0; padding: 28px 24px; max-width: 640px; letter-spacing: 0.02em; }
+.hero-banner-text { position: relative; z-index: 1; color: #2a3a38; font-family: "LXGW WenKai Screen", -apple-system, sans-serif; font-size: 2rem !important; font-weight: 500; text-align: center; margin: 0; padding: 28px 24px; max-width: 640px; letter-spacing: 0.02em; }
 .hero-banner-text .typing-cursor { display: inline-block; width: 2px; height: 1em; background: #2a3a38; margin-left: 2px; vertical-align: text-bottom; animation: cursor-blink 0.7s step-end infinite; }
 .hero-banner-text.typing-done .typing-cursor { display: none; }
 @keyframes cursor-blink { 50% { opacity: 0; } }

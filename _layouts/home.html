@@ -28,9 +28,9 @@ layout: default
         <span class="post-card-meta">
           {% assign cat = post.category | default: post.categories | first %}{% if cat %}{{ cat }} · {% endif %}{{ post.date | date: date_format }}
         </span>
-        <h3 class="post-card-title">{{ post.title | escape }}</h3>
-        {% if site.minima.show_excerpts and post.excerpt %}
-        <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncate: 140 }}</p>
+        <h3 class="post-card-title">{% if page.url contains '/en/' and post.title_en %}{{ post.title_en | escape }}{% else %}{{ post.title | escape }}{% endif %}</h3>
+        {% if site.minima.show_excerpts %}
+        <p class="post-card-excerpt">{% if page.url contains '/en/' and post.excerpt_en %}{{ post.excerpt_en | strip_html | truncate: 140 }}{% elsif post.excerpt %}{{ post.excerpt | strip_html | truncate: 140 }}{% endif %}</p>
         {% endif %}
       </div>
     </a>

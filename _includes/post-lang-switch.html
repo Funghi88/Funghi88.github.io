@@ -1,0 +1,43 @@
+<script>
+(function() {
+  var article = document.querySelector('article[data-page-type="post"]');
+  if (!article) return;
+
+  var contentZh = article.querySelector('.content-zh');
+  var contentEn = article.querySelector('.content-en');
+  if (!contentZh || !contentEn) return;
+
+  var langSwitch = document.querySelector('.lang-switch');
+  if (!langSwitch) return;
+
+  var titleEl = article.querySelector('.post-title');
+  var titleZh = titleEl && titleEl.getAttribute('data-title-zh');
+  var titleEn = titleEl && titleEl.getAttribute('data-title-en');
+
+  function applyLang(lang) {
+    document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+    localStorage.setItem('lang', lang);
+    contentZh.style.display = lang === 'zh' ? '' : 'none';
+    contentEn.style.display = lang === 'en' ? '' : 'none';
+    if (titleEl && titleZh && titleEn) {
+      titleEl.textContent = lang === 'zh' ? titleZh : titleEn;
+    }
+    langSwitch.textContent = lang === 'zh' ? 'En' : '中';
+    langSwitch.setAttribute('aria-label', lang === 'zh' ? 'English' : '中文');
+    langSwitch.setAttribute('data-lang', lang === 'zh' ? 'en' : 'zh');
+  }
+
+  var stored = localStorage.getItem('lang');
+  if (stored === 'en') {
+    applyLang('en');
+  } else {
+    applyLang('zh');
+  }
+
+  langSwitch.addEventListener('click', function(e) {
+    e.preventDefault();
+    var next = langSwitch.getAttribute('data-lang');
+    applyLang(next);
+  });
+})();
+</script>

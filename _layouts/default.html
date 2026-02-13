@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="{% if page.url contains '/en/' %}en{% else %}zh-CN{% endif %}">
   {%- include head.html -%}
+  {% if page.layout == 'post' %}
+  <script>
+    if (localStorage.getItem('lang') === 'en') { document.documentElement.lang = 'en'; }
+  </script>
+  {% endif %}
   <body>
   {% include lang-redirect.html %}
     {%- include header.html -%}
