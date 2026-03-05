@@ -1,16 +1,18 @@
 ---
 layout: post
-title: "做了一个小工具，帮你抓取全球热点内容"
-title_en: "A Small Tool I Built to Track Global Trends"
+title: 做了一个小工具，帮你抓取全球热点内容
+title_en: A Small Tool I Built to Track Global Trends
 date: 2026-03-05
 category: Writing
-excerpt: "一个帮助创作者抓取全球热点、分析传播潜力的开源工具 ViralLab — 分享我的开发故事与心得。"
-excerpt_en: "I built ViralLab — a small tool to help creators track global trends and analyze content virality. Here's why I open-sourced it."
+excerpt: 一个帮助创作者抓取全球热点、分析传播潜力的开源工具 ViralLab — 分享我的开发故事与心得。
+excerpt_en: I built ViralLab — a small tool to help creators track global trends and
+  analyze content virality. Here's why I open-sourced it.
 image:
-  path: /assets/images/posts/2026-03-05-virallab-tracking-global-trends/cover-social.jpg
-  alt: "ViralLab - AI-powered tool to track global trends"
+  path: /assets/images/posts/2026-03-05-virallab-tracking-global-trends/og-card.png
+  alt: A Small Tool I Built to Track Global Trends
 cover: /assets/images/posts/2026-03-05-virallab-tracking-global-trends/cover.JPG
 ---
+
 
 # 做了一个小工具，帮你抓取全球热点内容
 

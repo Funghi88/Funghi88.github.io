@@ -1,13 +1,18 @@
 ---
 layout: post
-title: "从设计师到 Build in Public：我的新起点"
-title_en: "From Designer to Building in Public: A New Start"
+title: 从设计师到 Build in Public：我的新起点
+title_en: 'From Designer to Building in Public: A New Start'
 date: 2026-02-13
 category: Writing
-excerpt: "一个非计算机背景的设计师，如何通过 AI 协作进入 Web3，并决定公开构建。"
-excerpt_en: "A designer with no CS background, how I entered Web3 through AI collaboration and decided to build in public."
-image: /assets/images/posts/2026-02-14-build-in-public/cover.jpg
+excerpt: 一个非计算机背景的设计师，如何通过 AI 协作进入 Web3，并决定公开构建。
+excerpt_en: A designer with no CS background, how I entered Web3 through AI collaboration
+  and decided to build in public.
+image:
+  path: /assets/images/posts/2026-02-14-build-in-public/og-card.png
+  alt: 'From Designer to Building in Public: A New Start'
+cover: /assets/images/posts/2026-02-14-build-in-public/cover.jpg
 ---
+
 
 # 从设计师到 Build in Public：我的新起点
 

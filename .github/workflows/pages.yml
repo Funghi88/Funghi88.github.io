@@ -21,6 +21,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Generate OG card images
+        run: |
+          pip install Pillow PyYAML --quiet
+          python3 scripts/generate-og-cards.py
       - name: Generate English post pages
         run: ruby scripts/generate-en-posts.rb
       - name: Setup Pages
