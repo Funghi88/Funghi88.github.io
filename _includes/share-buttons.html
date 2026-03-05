@@ -1,0 +1,38 @@
+{% assign share_url = page.url | prepend: site.baseurl | prepend: site.url %}
+{% assign share_title_zh = page.title | default: page.title_en %}
+{% assign share_title_en = page.title_en | default: page.title %}
+<div class="share-buttons" data-url="{{ share_url }}" data-title-zh="{{ share_title_zh | escape }}" data-title-en="{{ share_title_en | escape }}">
+  <span class="share-label">Share</span>
+  <a href="#" class="share-btn share-x" aria-label="Share on X">X</a>
+  <a href="#" class="share-btn share-linkedin" aria-label="Share on LinkedIn">LinkedIn</a>
+  <button type="button" class="share-btn share-copy" aria-label="Copy link">Copy link</button>
+</div>
+<script>
+(function() {
+  var share = document.querySelector('.share-buttons');
+  if (!share) return;
+  var url = share.getAttribute('data-url');
+  var titleZh = share.getAttribute('data-title-zh') || '';
+  var titleEn = share.getAttribute('data-title-en') || '';
+  function getTitle() {
+    return document.documentElement.lang === 'en' ? titleEn : titleZh;
+  }
+  share.querySelector('.share-x').addEventListener('click', function(e) {
+    e.preventDefault();
+    var t = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(getTitle()) + '&url=' + encodeURIComponent(url);
+    window.open(t, '_blank', 'noopener,noreferrer,width=550,height=420');
+  });
+  share.querySelector('.share-linkedin').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url), '_blank', 'noopener,noreferrer,width=550,height=420');
+  });
+  share.querySelector('.share-copy').addEventListener('click', function() {
+    navigator.clipboard.writeText(url).then(function() {
+      var btn = share.querySelector('.share-copy');
+      var orig = btn.textContent;
+      btn.textContent = 'Copied!';
+      setTimeout(function() { btn.textContent = orig; }, 1500);
+    });
+  });
+})();
+</script>

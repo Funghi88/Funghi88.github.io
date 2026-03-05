@@ -29,7 +29,10 @@ layout: default
   </div>
 
   <footer class="post-footer">
-    <a href="{{ '/' | relative_url }}" class="post-back">← Back</a>
+    <div class="post-footer-actions">
+      {% include share-buttons.html %}
+      <a href="{{ '/' | relative_url }}" class="post-back">← Back</a>
+    </div>
   </footer>
   {% include giscus.html %}
 </article>

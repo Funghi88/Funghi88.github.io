@@ -65,6 +65,12 @@ main .wrapper { margin-left: auto; margin-right: auto; padding-left: 32px; paddi
 .post-content { padding: 24px 0; }
 .post-content img { max-width: 100%; height: auto; margin: 16px 0; border-radius: 8px; }
 .post-footer { padding-top: 24px; border-top: 1px solid #B8F3EB; }
+.post-footer-actions { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+.share-buttons { display: flex; align-items: center; gap: 12px; font-size: 0.9rem; }
+.share-label { color: #5a6a67; }
+.share-btn { color: #5a6a67; text-decoration: none; background: none; border: 1px solid #B8F3EB; border-radius: 8px; padding: 6px 12px; font: inherit; font-size: 0.85rem; cursor: pointer; transition: color 0.15s, border-color 0.15s, background 0.15s; }
+.share-btn:hover { color: #2a3a38; border-color: #80D0ED; background: rgba(184,243,235,0.3); }
+.share-btn.share-copy { font-family: inherit; }
 .post-footer .post-back { font-size: 0.95rem; color: #5a6a67; }
 .post-footer .post-back:hover { color: #2a3a38; }
 .page-header { margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid #B8F3EB; }
