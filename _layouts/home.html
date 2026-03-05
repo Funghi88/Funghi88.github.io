@@ -22,9 +22,10 @@ layout: default
   {% endif %}
   <article class="post-card">
     <a href="{{ post_link }}" class="post-card-link">
-      {% if post.image %}
+      {% if post.cover or post.image %}
+      {% assign card_img = post.cover | default: post.image.path | default: post.image %}
       <div class="post-card-image">
-        <img src="{{ post.image | relative_url }}" alt="">
+        <img src="{{ card_img | relative_url }}" alt="">
       </div>
       {% else %}
       <div class="post-card-image post-card-image-placeholder"></div>
