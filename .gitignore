@@ -3,6 +3,10 @@ blog-editor/node_modules/
 # Image backups (keep original locally, don't push)
 **/cover-original.*
 
+# Generated English post pages (created by scripts/generate-en-posts.rb in CI)
+en/writing/
+en/research/
+
 # Internal docs (not in repo)
 BLOG-WORKFLOW.md
 DESIGN-FRAMEWORK.md

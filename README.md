@@ -4,12 +4,12 @@ AI-Native Research & Web3 Systems. Built with Jekyll.
 
 ## Local preview
 
-Uses Ruby 3.1 with Bundler 2.3. First-time setup (run each command separately):
+Uses Ruby 3.3 with Bundler 4.0. First-time setup (run each command separately):
 
 ```bash
-rbenv install 3.1.4
-rbenv local 3.1.4
-gem install bundler:2.3.26
+rbenv install 3.3.10
+rbenv local 3.3.10
+gem install bundler:4.0.3
 bundle install
 ```
 

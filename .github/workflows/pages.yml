@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Generate English post pages
+        run: ruby scripts/generate-en-posts.rb
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4

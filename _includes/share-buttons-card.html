@@ -1,5 +1,9 @@
 {% assign item = include.post %}
+{% if page.url contains '/en/' and item.title_en %}
+{% assign share_url = '/en' | append: item.url | prepend: site.baseurl | prepend: site.url %}
+{% else %}
 {% assign share_url = item.url | prepend: site.baseurl | prepend: site.url %}
+{% endif %}
 {% assign share_title_zh = item.title | default: item.title_en %}
 {% assign share_title_en = item.title_en | default: item.title %}
 <span class="share-wrap share-card" data-url="{{ share_url }}" data-title-zh="{{ share_title_zh | escape }}" data-title-en="{{ share_title_en | escape }}" onclick="event.stopPropagation(); event.preventDefault();">

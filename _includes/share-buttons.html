@@ -1,7 +1,12 @@
 {% assign share_url = page.url | prepend: site.baseurl | prepend: site.url %}
+{% if page.url contains '/en/' %}
+{% assign share_url_en = share_url %}
+{% else %}
+{% assign share_url_en = '/en' | append: page.url | prepend: site.baseurl | prepend: site.url %}
+{% endif %}
 {% assign share_title_zh = page.title | default: page.title_en %}
 {% assign share_title_en = page.title_en | default: page.title %}
-<span class="share-wrap {% unless include.footer %}share-buttons-inline{% endunless %}" data-url="{{ share_url }}" data-title-zh="{{ share_title_zh | escape }}" data-title-en="{{ share_title_en | escape }}">
+<span class="share-wrap {% unless include.footer %}share-buttons-inline{% endunless %}" data-url="{{ share_url }}" data-url-en="{% if page.title_en %}{{ share_url_en }}{% endif %}" data-title-zh="{{ share_title_zh | escape }}" data-title-en="{{ share_title_en | escape }}">
   {% unless include.footer %}<span class="share-sep">·</span>{% endunless %}
   <span class="share-dropdown">
     <button type="button" class="share-trigger share-trigger-circle" aria-label="Share" aria-expanded="false" aria-haspopup="true">

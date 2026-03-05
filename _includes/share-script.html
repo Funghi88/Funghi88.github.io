@@ -6,12 +6,14 @@
     document.querySelectorAll('.share-trigger').forEach(function(t) { t.setAttribute('aria-expanded', 'false'); });
   });
   document.querySelectorAll('.share-wrap[data-url]').forEach(function(wrap) {
-    var url = wrap.getAttribute('data-url');
+    var urlEn = wrap.getAttribute('data-url-en');
+    var urlZh = wrap.getAttribute('data-url');
     var titleZh = wrap.getAttribute('data-title-zh') || '';
     var titleEn = wrap.getAttribute('data-title-en') || '';
     var trigger = wrap.querySelector('.share-trigger');
     var menu = wrap.querySelector('.share-menu');
     if (!trigger || !menu) return;
+    function getUrl() { return (document.documentElement.lang === 'en' && urlEn) ? urlEn : urlZh; }
     function getTitle() { return document.documentElement.lang === 'en' ? titleEn : titleZh; }
     trigger.addEventListener('click', function(e) {
       e.preventDefault();
@@ -27,6 +29,7 @@
         e.preventDefault();
         e.stopPropagation();
         var platform = el.getAttribute('data-platform');
+        var url = getUrl();
         var title = getTitle();
         var shareUrl = '';
         if (platform === 'whatsapp') shareUrl = 'https://wa.me/?text=' + encodeURIComponent(title + ' ' + url);
