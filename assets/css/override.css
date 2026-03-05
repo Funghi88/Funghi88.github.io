@@ -96,6 +96,7 @@ main .wrapper { margin-left: auto; margin-right: auto; padding-left: 32px; paddi
 .post-footer .post-back { font-size: 0.95rem; color: #5a6a67; }
 .post-footer .post-back:hover { color: #2a3a38; }
 .post-share-giscus { margin-top: 32px; padding-top: 24px; border-top: 1px solid #B8F3EB; }
+.discussion-paper .post-share-giscus { margin-top: 0; padding-top: 0; border-top: none; }
 .giscus-section { margin-top: 24px; }
 .giscus-actions { text-align: center; margin-bottom: 24px; }
 .like-btn { display: inline-block; padding: 14px 28px; font-size: 0.9rem; background: #F0BBDD; color: #2a3a38; border-radius: 12px; text-decoration: none; font-weight: 500; transition: background 0.15s, transform 0.1s; }
