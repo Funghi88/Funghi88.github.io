@@ -37,9 +37,12 @@ layout: default
   <footer class="post-footer">
     <a href="{{ '/' | relative_url }}" class="post-back">← Back</a>
   </footer>
+</article>
+<div class="content-separator"></div>
+<div class="discussion-paper content-paper">
   <div class="post-share-giscus">
     {% include share-buttons.html footer=true %}
   </div>
   {% include giscus.html %}
-</article>
+</div>
 {% include post-lang-switch.html %}

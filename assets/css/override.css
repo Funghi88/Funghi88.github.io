@@ -59,7 +59,11 @@ main .wrapper { margin-left: auto; margin-right: auto; padding-left: 32px; paddi
 
 /* Content paper (About, posts) */
 .content-paper { background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(42,58,56,0.08); padding: 40px 80px; margin-bottom: 32px; }
-.post.content-paper { max-width: 800px; margin-left: auto; margin-right: auto; }
+.post.content-paper,
+.page.content-paper,
+.discussion-paper { max-width: 800px; margin-left: auto; margin-right: auto; }
+.content-separator { height: 32px; }
+.discussion-paper { margin-top: 0; }
 .post-header-above { padding-top: 0; }
 .post-cover { margin: 24px 0 32px 0; overflow: hidden; border-radius: 12px; }
 .post-cover img { width: 100%; height: auto; display: block; vertical-align: top; }
@@ -93,8 +97,8 @@ main .wrapper { margin-left: auto; margin-right: auto; padding-left: 32px; paddi
 .post-footer .post-back:hover { color: #2a3a38; }
 .post-share-giscus { margin-top: 32px; padding-top: 24px; border-top: 1px solid #B8F3EB; }
 .giscus-section { margin-top: 24px; }
-.giscus-actions { margin-bottom: 20px; }
-.like-btn { display: inline-block; padding: 10px 20px; background: #F0BBDD; color: #2a3a38; border-radius: 10px; text-decoration: none; font-weight: 500; transition: background 0.15s, transform 0.1s; }
+.giscus-actions { text-align: center; margin-bottom: 24px; }
+.like-btn { display: inline-block; padding: 14px 28px; font-size: 0.9rem; background: #F0BBDD; color: #2a3a38; border-radius: 12px; text-decoration: none; font-weight: 500; transition: background 0.15s, transform 0.1s; }
 .like-btn:hover { background: #F9DDDD; transform: translateY(-1px); }
 .like-btn-en { display: none; }
 html[lang="en"] .like-btn-zh { display: none; }
