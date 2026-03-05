@@ -12,10 +12,12 @@ layout: default
       {{ page.date | date: date_format }}
       {% if page.author %} · {{ page.author }}{% endif %}
       · {{ read_time }} min read
-      <span class="post-meta-qr" title="Scan to read on phone">
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data={{ post_url | url_encode }}" alt="QR code" width="32" height="32">
+      <span class="post-meta-qr-share">
+        <span class="post-meta-qr" title="Scan to read on phone">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data={{ post_url | url_encode }}" alt="QR code">
+        </span>
+        {% include share-buttons.html footer=true %}
       </span>
-      {% include share-buttons.html %}
     </p>
   </header>
   {% if page.image %}

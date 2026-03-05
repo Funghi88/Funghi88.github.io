@@ -58,14 +58,20 @@ main .wrapper { margin-left: auto; margin-right: auto; padding-left: 32px; paddi
 .post-card-excerpt { font-size: 0.95rem; color: #5a6a67; line-height: 1.5; margin: 0; }
 
 /* Content paper (About, posts) */
-.content-paper { background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(42,58,56,0.08); padding: 40px 72px; margin-bottom: 32px; }
-.post.content-paper { max-width: 900px; margin-left: auto; margin-right: auto; }
+.content-paper { background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(42,58,56,0.08); padding: 40px 80px; margin-bottom: 32px; }
+.post.content-paper { max-width: 800px; margin-left: auto; margin-right: auto; }
 .post-header-above { padding-top: 0; }
-.post-cover { margin: 24px -72px 32px -72px; overflow: hidden; border-radius: 12px; }
-.post-meta-qr { display: inline-flex; align-items: center; margin-left: 8px; vertical-align: middle; }
-.post-meta-qr img { border-radius: 4px; opacity: 0.85; }
-.post-meta-qr img:hover { opacity: 1; }
+.post-cover { margin: 24px 0 32px 0; overflow: hidden; border-radius: 12px; }
 .post-cover img { width: 100%; height: auto; display: block; vertical-align: top; }
+.post-meta-qr-share { display: inline-flex; align-items: center; gap: 6px; margin-left: 8px; vertical-align: middle; }
+.post-meta-qr { position: relative; display: inline-block; }
+.post-meta-qr img { width: 24px; height: 24px; border-radius: 6px; opacity: 0.9; transition: transform 0.2s ease; display: block; }
+.post-meta-qr:hover img { transform: scale(4); transform-origin: bottom left; box-shadow: 0 4px 16px rgba(42,58,56,0.2); }
+.post-meta-qr-share { position: relative; }
+.post-meta-qr-share .post-meta-qr { overflow: visible; }
+.post-meta .share-wrap { margin-left: 0; }
+.post-meta .share-trigger { padding: 4px 8px; font-size: 0.75rem; }
+.post-meta .share-icon { width: 12px; height: 12px; }
 .post .post-header { padding: 32px 0 24px; text-align: left; border-bottom: 1px solid #B8F3EB; }
 .post .post-header .post-title { font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; color: #2a3a38; background: linear-gradient(90deg, rgba(184,243,235,0.7) 0%, transparent 100%); padding: 0.1em 0.2em 0.1em 0; margin-left: -0.2em; }
 .post .post-meta { font-size: 0.9rem; color: #5a6a67; }
