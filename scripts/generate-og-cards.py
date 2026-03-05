@@ -16,13 +16,11 @@ POSTS_DIR = Path(__file__).parent.parent / "_posts"
 ASSETS = Path(__file__).parent.parent / "assets" / "images" / "posts"
 # OG image size (Twitter/FB recommended)
 W, H = 1200, 628
-IMG_H = 440  # image area height
-TEXT_H = H - IMG_H
-BODY_PADDING = 24
-BG = "#ffffff"
-TITLE_COLOR = "#2a3a38"
-META_COLOR = "#5a6a67"
-CARD_RADIUS = 10
+OVERLAY_H = 220  # dark bar height at bottom
+BODY_PADDING = 32
+OVERLAY_COLOR = (0, 0, 0, 180)  # semi-transparent black
+TITLE_COLOR = "#ffffff"
+META_COLOR = "#b8c4c2"
 
 
 def load_post(path):
@@ -80,50 +78,62 @@ def draw_card(data):
     out_path = data["out_dir"] / "og-card.png"
     data["out_dir"].mkdir(parents=True, exist_ok=True)
 
-    # Load and crop cover image
+    # Load and crop cover to fill full card (1200x628)
     img = Image.open(data["img_path"]).convert("RGB")
     iw, ih = img.size
-    scale = max(W / iw, IMG_H / ih)
+    scale = max(W / iw, H / ih)
     nw, nh = int(iw * scale), int(ih * scale)
     img = img.resize((nw, nh), Image.Resampling.LANCZOS)
     x = (nw - W) // 2
-    y = (nh - IMG_H) // 2
-    img = img.crop((x, y, x + W, y + IMG_H))
+    y = (nh - H) // 2
+    card = img.crop((x, y, x + W, y + H))
 
-    # Create canvas
-    card = Image.new("RGB", (W, H), BG)
-    card.paste(img, (0, 0))
-
-    # Draw text area background
+    # Semi-transparent overlay bar at bottom
+    overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    draw_overlay = ImageDraw.Draw(overlay)
+    draw_overlay.rectangle([0, H - OVERLAY_H, W, H], fill=OVERLAY_COLOR)
+    card = card.convert("RGBA")
+    card = Image.alpha_composite(card, overlay)
+    card = card.convert("RGB")
     draw = ImageDraw.Draw(card)
-    draw.rectangle([0, IMG_H, W, H], fill=BG)
 
-    # Fonts (fallback to default)
-    try:
-        title_font = ImageFont.truetype("/System/Library/Fonts/Helvetica.ttc", 36)
-        meta_font = ImageFont.truetype("/System/Library/Fonts/Helvetica.ttc", 22)
-    except Exception:
-        title_font = ImageFont.load_default()
-        meta_font = title_font
+    # Fonts (macOS, Linux CI, fallback)
+    font_paths = [
+        "/System/Library/Fonts/Helvetica.ttc",
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+    ]
+    title_font = meta_font = None
+    for fp in font_paths:
+        if Path(fp).exists():
+            try:
+                title_font = ImageFont.truetype(fp, 38)
+                meta_font = ImageFont.truetype(fp, 22)
+                break
+            except Exception:
+                pass
+    if not title_font:
+        title_font = meta_font = ImageFont.load_default()
 
-    # Title (truncate if needed)
+    base_y = H - OVERLAY_H + 24
+
+    # Title (white)
     title = data["title"]
-    if len(title) > 55:
-        title = title[:52] + "..."
-    draw.text((BODY_PADDING, IMG_H + 20), title, fill=TITLE_COLOR, font=title_font)
+    if len(title) > 50:
+        title = title[:47] + "..."
+    draw.text((BODY_PADDING, base_y), title, fill=TITLE_COLOR, font=title_font)
 
-    # Date top right
+    # Date and excerpt row
     if data["date"]:
         bbox = draw.textbbox((0, 0), data["date"], font=meta_font)
         tw = bbox[2] - bbox[0]
-        draw.text((W - BODY_PADDING - tw, IMG_H + 22), data["date"], fill=META_COLOR, font=meta_font)
+        draw.text((W - BODY_PADDING - tw, base_y + 4), data["date"], fill=META_COLOR, font=meta_font)
 
-    # Excerpt
     excerpt = data["excerpt"]
     if excerpt:
-        if len(excerpt) > 95:
-            excerpt = excerpt[:92] + "..."
-        draw.text((BODY_PADDING, IMG_H + 72), excerpt, fill=META_COLOR, font=meta_font)
+        if len(excerpt) > 90:
+            excerpt = excerpt[:87] + "..."
+        draw.text((BODY_PADDING, base_y + 56), excerpt, fill=META_COLOR, font=meta_font)
 
     card.save(out_path, "PNG", optimize=True)
     return out_path

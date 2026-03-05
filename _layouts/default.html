@@ -3,7 +3,9 @@
   {%- include head.html -%}
   {% if page.layout == 'post' %}
   <script>
-    if (localStorage.getItem('lang') === 'en') { document.documentElement.lang = 'en'; }
+    var lang = localStorage.getItem('lang');
+    if (lang === 'en') { document.documentElement.lang = 'en'; }
+    else if (lang === 'zh') { document.documentElement.lang = 'zh-CN'; }
   </script>
   {% endif %}
   <body>
