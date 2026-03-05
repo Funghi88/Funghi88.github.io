@@ -13,7 +13,11 @@ Dir.glob(File.join(POSTS_DIR, '*.md')).each do |path|
   content = File.read(path)
   next unless content.start_with?('---')
   _, fm, body = content.split('---', 3)
-  data = YAML.load(fm, permitted_classes: [Date, Time])
+  data = if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new('3.1')
+    YAML.load(fm, permitted_classes: [Date, Time])
+  else
+    YAML.load(fm)
+  end
   next unless data && data['title_en']
 
   date_str = data['date'].to_s
@@ -26,7 +30,9 @@ Dir.glob(File.join(POSTS_DIR, '*.md')).each do |path|
 
   out_dir = File.join(OUT_BASE, cat, year, month, day)
   FileUtils.mkdir_p(out_dir)
-  out_path = File.join(out_dir, "#{slug}.md")
+  # Slugify for URL: match Jekyll's post permalink (spaces/colons -> hyphens)
+  slugified = slug.to_s.gsub(/\s+/, '-').gsub(/[：:]+/, '-').gsub(/-+/, '-').sub(/\A-|-\z/, '')
+  out_path = File.join(out_dir, "#{slugified}.md")
 
   en_fm = {
     'layout' => 'post',
@@ -40,7 +46,7 @@ Dir.glob(File.join(POSTS_DIR, '*.md')).each do |path|
     'category' => data['category'],
     'image' => data['image'],
     'cover' => data['cover'],
-    'permalink' => "/en/#{cat}/#{year}/#{month}/#{day}/#{slug}.html"
+    'permalink' => "/en/#{cat}/#{year}/#{month}/#{day}/#{slugified}.html"
   }
   en_fm['author'] = data['author'] if data['author']
 
