@@ -1,0 +1,46 @@
+<script>
+(function() {
+  document.addEventListener('click', function() {
+    document.querySelectorAll('.share-menu').forEach(function(m) { m.hidden = true; });
+    document.querySelectorAll('.share-trigger').forEach(function(t) { t.setAttribute('aria-expanded', 'false'); });
+  });
+  document.querySelectorAll('.share-wrap[data-url]').forEach(function(wrap) {
+    var url = wrap.getAttribute('data-url');
+    var titleZh = wrap.getAttribute('data-title-zh') || '';
+    var titleEn = wrap.getAttribute('data-title-en') || '';
+    var trigger = wrap.querySelector('.share-trigger');
+    var menu = wrap.querySelector('.share-menu');
+    if (!trigger || !menu) return;
+    function getTitle() { return document.documentElement.lang === 'en' ? titleEn : titleZh; }
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var isOpen = !menu.hidden;
+      document.querySelectorAll('.share-menu').forEach(function(m) { m.hidden = true; });
+      document.querySelectorAll('.share-trigger').forEach(function(t) { t.setAttribute('aria-expanded', 'false'); });
+      if (!isOpen) { menu.hidden = false; trigger.setAttribute('aria-expanded', 'true'); }
+    });
+    wrap.addEventListener('click', function(e) { e.stopPropagation(); });
+    wrap.querySelectorAll('.share-option').forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var platform = el.getAttribute('data-platform');
+        var title = getTitle();
+        var shareUrl = '';
+        if (platform === 'whatsapp') shareUrl = 'https://wa.me/?text=' + encodeURIComponent(title + ' ' + url);
+        else if (platform === 'telegram') shareUrl = 'https://t.me/share/url?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(title);
+        else if (platform === 'x') shareUrl = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(title) + '&url=' + encodeURIComponent(url);
+        else if (platform === 'linkedin') shareUrl = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url);
+        if (shareUrl) window.open(shareUrl, '_blank', 'noopener,noreferrer,width=550,height=420');
+        if (platform === 'copy') {
+          navigator.clipboard.writeText(url).then(function() {
+            el.textContent = 'Copied!';
+            setTimeout(function() { el.textContent = 'Copy link'; }, 1500);
+          });
+        }
+        menu.hidden = true; trigger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  });
+})();
+</script>

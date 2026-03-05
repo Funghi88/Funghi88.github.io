@@ -1,12 +1,9 @@
 ---
 layout: default
 ---
-
+{% assign post_url = page.url | prepend: site.baseurl | prepend: site.url %}
 <article class="post content-paper" data-page-type="post">
-  {% if page.image %}
-  <p class="post-cover"><img src="{{ page.image | relative_url }}" alt="" loading="lazy"></p>
-  {% endif %}
-  <header class="post-header">
+  <header class="post-header post-header-above">
     <h1 class="post-title" data-title-zh="{{ page.title | escape }}" data-title-en="{{ page.title_en | default: page.title | escape }}">{{ page.title | escape }}</h1>
     {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
     {% assign words = page.content | number_of_words %}
@@ -15,9 +12,15 @@ layout: default
       {{ page.date | date: date_format }}
       {% if page.author %} · {{ page.author }}{% endif %}
       · {{ read_time }} min read
+      <span class="post-meta-qr" title="Scan to read on phone">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data={{ post_url | url_encode }}" alt="QR code" width="32" height="32">
+      </span>
       {% include share-buttons.html %}
     </p>
   </header>
+  {% if page.image %}
+  <p class="post-cover"><img src="{{ page.image | relative_url }}" alt="" loading="lazy"></p>
+  {% endif %}
 
   <div class="post-content">
     {% assign parts = content | split: "<!-- lang: en -->" %}
@@ -32,6 +35,9 @@ layout: default
   <footer class="post-footer">
     <a href="{{ '/' | relative_url }}" class="post-back">← Back</a>
   </footer>
+  <div class="post-share-giscus">
+    {% include share-buttons.html footer=true %}
+  </div>
   {% include giscus.html %}
 </article>
 {% include post-lang-switch.html %}

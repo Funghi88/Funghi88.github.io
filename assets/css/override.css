@@ -49,16 +49,22 @@ main .wrapper { margin-left: auto; margin-right: auto; padding-left: 32px; paddi
 .post-card-image { width: 100%; aspect-ratio: 16/9; overflow: hidden; background: #F9DDDD; }
 .post-card-image img { width: 100%; height: 100%; object-fit: cover; }
 .post-card-image-placeholder { background: linear-gradient(135deg, #F9DDDD 0%, #B8F3EB 100%); }
-.post-card-body { padding: 20px; }
+.post-card-body { padding: 20px; position: relative; }
+.post-card-share { position: absolute; top: 12px; right: 12px; z-index: 2; }
+.share-trigger-card { padding: 4px 10px; font-size: 0.8rem; }
 .post-card-meta { font-size: 0.85rem; color: #5a6a67; display: block; margin-bottom: 8px; }
 .post-card-title { font-size: 1.25rem; font-weight: 600; color: #2a3a38; margin: 0 0 8px 0; line-height: 1.3; transition: color 0.15s ease; }
 .post-card-link:hover .post-card-title { color: #5a9bb8; }
 .post-card-excerpt { font-size: 0.95rem; color: #5a6a67; line-height: 1.5; margin: 0; }
 
 /* Content paper (About, posts) */
-.content-paper { background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(42,58,56,0.08); padding: 40px 48px; margin-bottom: 32px; }
-.post.content-paper { max-width: 720px; margin-left: auto; margin-right: auto; }
-.post-cover { margin: -40px -48px 32px -48px; overflow: hidden; border-radius: 12px 12px 0 0; }
+.content-paper { background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(42,58,56,0.08); padding: 40px 72px; margin-bottom: 32px; }
+.post.content-paper { max-width: 900px; margin-left: auto; margin-right: auto; }
+.post-header-above { padding-top: 0; }
+.post-cover { margin: 24px -72px 32px -72px; overflow: hidden; border-radius: 12px; }
+.post-meta-qr { display: inline-flex; align-items: center; margin-left: 8px; vertical-align: middle; }
+.post-meta-qr img { border-radius: 4px; opacity: 0.85; }
+.post-meta-qr img:hover { opacity: 1; }
 .post-cover img { width: 100%; height: auto; display: block; vertical-align: top; }
 .post .post-header { padding: 32px 0 24px; text-align: left; border-bottom: 1px solid #B8F3EB; }
 .post .post-header .post-title { font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; color: #2a3a38; background: linear-gradient(90deg, rgba(184,243,235,0.7) 0%, transparent 100%); padding: 0.1em 0.2em 0.1em 0; margin-left: -0.2em; }
@@ -68,11 +74,29 @@ main .wrapper { margin-left: auto; margin-right: auto; padding-left: 32px; paddi
 .post-footer { padding-top: 24px; border-top: 1px solid #B8F3EB; }
 .share-buttons-inline { display: inline-flex; align-items: center; gap: 8px; margin-left: 4px; }
 .share-sep { color: #5a6a67; margin-right: 4px; }
-.share-buttons .share-btn { color: #5a6a67; text-decoration: none; background: none; border: 1px solid #B8F3EB; border-radius: 6px; padding: 4px 10px; font: inherit; font-size: 0.8rem; cursor: pointer; transition: color 0.15s, border-color 0.15s, background 0.15s; }
-.share-buttons .share-btn:hover { color: #2a3a38; border-color: #80D0ED; background: rgba(184,243,235,0.3); }
-.share-buttons .share-copy { font-family: inherit; }
+.share-dropdown { position: relative; display: inline-block; }
+.share-trigger { display: inline-flex; align-items: center; gap: 6px; color: #5a6a67; background: #fff; border: 1px solid #B8F3EB; border-radius: 8px; padding: 6px 12px; font: inherit; font-size: 0.85rem; cursor: pointer; transition: color 0.15s, border-color 0.15s, background 0.15s; }
+.share-trigger:hover { color: #2a3a38; border-color: #80D0ED; background: rgba(184,243,235,0.3); }
+.share-icon { flex-shrink: 0; }
+.share-menu { position: absolute; top: 100%; left: 0; margin-top: 6px; min-width: 140px; background: #fff; border: 1px solid #B8F3EB; border-radius: 8px; box-shadow: 0 4px 16px rgba(42,58,56,0.1); padding: 8px 0; z-index: 100; }
+.share-menu-header { font-size: 0.7rem; font-weight: 600; color: #5a6a67; letter-spacing: 0.05em; padding: 4px 16px 8px; }
+.share-option { display: block; width: 100%; padding: 8px 16px; color: #3d4d4a; text-decoration: none; font: inherit; font-size: 0.9rem; background: none; border: none; cursor: pointer; text-align: left; transition: background 0.15s; }
+.share-option:hover { background: rgba(184,243,235,0.3); }
+.share-option[role="menuitem"] { font-family: inherit; }
 .post-footer .post-back { font-size: 0.95rem; color: #5a6a67; }
 .post-footer .post-back:hover { color: #2a3a38; }
+.post-share-giscus { margin-top: 32px; padding-top: 24px; border-top: 1px solid #B8F3EB; }
+.giscus-section { margin-top: 24px; }
+.giscus-actions { margin-bottom: 20px; }
+.like-btn { display: inline-block; padding: 10px 20px; background: #F0BBDD; color: #2a3a38; border-radius: 10px; text-decoration: none; font-weight: 500; transition: background 0.15s, transform 0.1s; }
+.like-btn:hover { background: #F9DDDD; transform: translateY(-1px); }
+.like-btn-en { display: none; }
+html[lang="en"] .like-btn-zh { display: none; }
+html[lang="en"] .like-btn-en { display: inline; }
+.giscus-heading { font-size: 1.25rem; font-weight: 600; color: #2a3a38; margin: 0 0 20px 0; }
+.giscus-heading-en { display: none; }
+html[lang="en"] .giscus-heading-zh { display: none; }
+html[lang="en"] .giscus-heading-en { display: inline; }
 .page-header { margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid #B8F3EB; }
 .page-title { font-size: 1.75rem; font-weight: 600; color: #2a3a38; margin: 0; }
 

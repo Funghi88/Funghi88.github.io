@@ -25,6 +25,7 @@ layout: default
       <div class="post-card-image post-card-image-placeholder"></div>
       {% endif %}
       <div class="post-card-body">
+        <div class="post-card-share">{% include share-buttons-card.html post=post %}</div>
         <span class="post-card-meta">
           {% assign cat = post.category | default: post.categories | first %}{% if cat %}{{ cat }} · {% endif %}{{ post.date | date: date_format }}
         </span>
@@ -39,3 +40,4 @@ layout: default
 </div>
 {% endif %}
 </section>
+{% include share-script.html %}
