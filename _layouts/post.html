@@ -15,6 +15,7 @@ layout: default
       {{ page.date | date: date_format }}
       {% if page.author %} · {{ page.author }}{% endif %}
       · {{ read_time }} min read
+      {% include share-buttons.html %}
     </p>
   </header>
 
@@ -29,10 +30,7 @@ layout: default
   </div>
 
   <footer class="post-footer">
-    <div class="post-footer-actions">
-      {% include share-buttons.html %}
-      <a href="{{ '/' | relative_url }}" class="post-back">← Back</a>
-    </div>
+    <a href="{{ '/' | relative_url }}" class="post-back">← Back</a>
   </footer>
   {% include giscus.html %}
 </article>
