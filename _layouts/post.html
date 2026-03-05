@@ -8,17 +8,15 @@ layout: default
     {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
     {% assign words = page.content | number_of_words %}
     {% assign read_time = words | divided_by: 200 | at_least: 1 %}
-    <p class="post-meta">
-      {{ page.date | date: date_format }}
-      {% if page.author %} · {{ page.author }}{% endif %}
-      · {{ read_time }} min read
+    <div class="post-meta">
+      <span class="post-meta-text">{{ page.date | date: date_format }}{% if page.author %} · {{ page.author }}{% endif %} · {{ read_time }} min read</span>
       <span class="post-meta-qr-share">
         <span class="post-meta-qr" title="Scan to read on phone">
           <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data={{ post_url | url_encode }}" alt="QR code">
         </span>
         {% include share-buttons.html footer=true %}
       </span>
-    </p>
+    </div>
   </header>
   {% if page.image %}
   <p class="post-cover"><img src="{{ page.image | relative_url }}" alt="" loading="lazy"></p>
@@ -34,15 +32,20 @@ layout: default
     {% endif %}
   </div>
 
+  <div class="like-share-row">
+    <a href="#giscus-comments" class="like-btn">
+      <span class="like-btn-zh">觉得不错, 请安娜喝椰汁🥥</span>
+      <span class="like-btn-en">Like the article ❤️</span>
+    </a>
+    {% include share-buttons.html footer=true %}
+  </div>
+
   <footer class="post-footer">
     <a href="{{ '/' | relative_url }}" class="post-back">← Back</a>
   </footer>
 </article>
 <div class="content-separator"></div>
 <div class="discussion-paper content-paper">
-  <div class="post-share-giscus">
-    {% include share-buttons.html footer=true %}
-  </div>
   {% include giscus.html %}
 </div>
 {% include post-lang-switch.html %}

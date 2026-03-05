@@ -3,19 +3,17 @@
 {% assign share_title_en = page.title_en | default: page.title %}
 <span class="share-wrap {% unless include.footer %}share-buttons-inline{% endunless %}" data-url="{{ share_url }}" data-title-zh="{{ share_title_zh | escape }}" data-title-en="{{ share_title_en | escape }}">
   {% unless include.footer %}<span class="share-sep">·</span>{% endunless %}
-  <div class="share-dropdown">
-    <button type="button" class="share-trigger" aria-label="Share" aria-expanded="false" aria-haspopup="true">
-      <svg class="share-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      Share
+  <span class="share-dropdown">
+    <button type="button" class="share-trigger share-trigger-circle" aria-label="Share" aria-expanded="false" aria-haspopup="true">
+      <svg class="share-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
     </button>
     <div class="share-menu" role="menu" hidden>
       <div class="share-menu-header">Share to</div>
-      <a href="#" class="share-option" data-platform="whatsapp" role="menuitem">WhatsApp</a>
-      <a href="#" class="share-option" data-platform="telegram" role="menuitem">Telegram</a>
-      <a href="#" class="share-option" data-platform="x" role="menuitem">X</a>
-      <a href="#" class="share-option" data-platform="linkedin" role="menuitem">LinkedIn</a>
+      <button type="button" class="share-option" data-platform="whatsapp" role="menuitem">WhatsApp</button>
+      <button type="button" class="share-option" data-platform="telegram" role="menuitem">Telegram</button>
+      <button type="button" class="share-option" data-platform="x" role="menuitem">X</button>
+      <button type="button" class="share-option" data-platform="linkedin" role="menuitem">LinkedIn</button>
       <button type="button" class="share-option" data-platform="copy" role="menuitem">Copy link</button>
     </div>
-  </div>
+  </span>
 </span>
-{% include share-script.html %}

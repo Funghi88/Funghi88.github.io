@@ -4,15 +4,22 @@ AI-Native Research & Web3 Systems. Built with Jekyll.
 
 ## Local preview
 
-Uses Ruby 3.1 (required by github-pages gem):
+Uses Ruby 3.1 with Bundler 2.3. First-time setup (run each command separately):
 
 ```bash
-rbenv install 3.1.4   # if needed
+rbenv install 3.1.4
+rbenv local 3.1.4
+gem install bundler:2.3.26
 bundle install
-bundle exec jekyll serve
 ```
 
-Open http://localhost:4000
+Then start the server:
+
+```bash
+./serve.sh
+```
+
+Open http://localhost:4003
 
 ## Deploy
 
