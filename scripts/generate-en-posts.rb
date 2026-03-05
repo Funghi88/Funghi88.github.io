@@ -39,6 +39,7 @@ Dir.glob(File.join(POSTS_DIR, '*.md')).each do |path|
     'date' => date_str,
     'category' => data['category'],
     'image' => data['image'],
+    'cover' => data['cover'],
     'permalink' => "/en/#{cat}/#{year}/#{month}/#{day}/#{slug}.html"
   }
   en_fm['author'] = data['author'] if data['author']

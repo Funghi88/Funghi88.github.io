@@ -18,8 +18,9 @@ layout: default
       </span>
     </div>
   </header>
-  {% if page.image %}
-  <p class="post-cover"><img src="{{ page.image | relative_url }}" alt="" loading="lazy"></p>
+  {% if page.cover or page.image %}
+  {% assign cover_img = page.cover | default: page.image.path | default: page.image %}
+  <p class="post-cover"><img src="{{ cover_img | relative_url }}" alt="" loading="lazy"></p>
   {% endif %}
 
   <div class="post-content">
