@@ -11,6 +11,7 @@ image: /assets/images/posts/YYYY-MM-DD-slug/cover.jpg
 
 <!-- 封面：layout 自动从 front matter 的 image 渲染，中英文都显示，无需在正文写 -->
 <!-- 文内图：在中文和英文对应位置各写一遍，否则切换语言时图片会消失 -->
+<!-- 与封面同格式的图：在图片后加 {: .cover-style } -->
 
 # 中文标题
 
@@ -22,7 +23,7 @@ image: /assets/images/posts/YYYY-MM-DD-slug/cover.jpg
 
 ## 第二节
 
-![图片描述](/assets/images/posts/YYYY-MM-DD-slug/your-image.png)
+![图片描述](/assets/images/posts/YYYY-MM-DD-slug/your-image.png){: .cover-style }
 
 内容...
 
@@ -40,7 +41,7 @@ Content...
 
 ## Section Two
 
-![Image description](/assets/images/posts/YYYY-MM-DD-slug/your-image.png)
+![Image description](/assets/images/posts/YYYY-MM-DD-slug/your-image.png){: .cover-style }
 
 Content...
 
