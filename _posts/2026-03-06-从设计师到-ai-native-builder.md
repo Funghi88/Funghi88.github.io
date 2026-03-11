@@ -23,7 +23,7 @@ cover: /assets/images/posts/2026-03-06-from-designer-to-ai-native-builder/cover.
 
 <div class="reading-spacer"></div>
 
-以前，产品搭建通常需要一个团队
+以前，产品搭建通常需要一个团队<br>
 现在，一个人 + AI，一周就能开发一个完整的产品
 
 
@@ -59,7 +59,7 @@ cover: /assets/images/posts/2026-03-06-from-designer-to-ai-native-builder/cover.
 
 <div class="reading-spacer"></div>
 
-如今 AI 时代，单项能力卓越已不能满足未来发展的需要
+如今 AI 时代，单项能力卓越已不能满足未来发展的需要<br>
 **如何协同 AI , 让数字员工赋能商业形成闭环, 撬动时代财富密码将成为近 2 年最核心的课题**
 
 
@@ -343,7 +343,7 @@ Over the past year, I’ve been asking myself one question again and again:
 
 <div class="reading-spacer"></div>
 
-Not long ago, building a product usually required a team.
+Not long ago, building a product usually required a team.<br>
 Today, one person with AI can build a full product in a week.
 
 <div class="reading-spacer"></div>
@@ -378,12 +378,12 @@ That is why I decided to start **Building in Public**.
 
 <div class="reading-spacer"></div>
 
-On one side, it’s my way of exploring the possibility of a **One-Person Company**.
+On one side, it’s my way of exploring the possibility of a **One-Person Company**.<br>
 On the other side, it allows me to build visibility and influence.
 
 <div class="reading-spacer"></div>
 
-Because in today’s world, **having skills is not enough**.
+Because in today’s world, **having skills is not enough**.<br>
 Your work needs to be **seen**.
 
 <div class="reading-spacer"></div>
