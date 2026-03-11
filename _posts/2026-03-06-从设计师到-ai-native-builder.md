@@ -35,7 +35,8 @@ cover: /assets/images/posts/2026-03-06-from-designer-to-ai-native-builder/cover.
 
 <div class="reading-spacer"></div>
 
-当前 AI 狂热，能 vibe code 出一款产品能够轻松收获关注。一时间上门安装 openclaw 风起云涌, 只是风口过后, 仍需面对：
+当前 AI 狂热，能 vibe code 出一款产品能够轻松收获关注
+一时间上门安装 openclaw 风起云涌, 只是风口过后, 仍需面对：
 **产品是否解决用户真实需求, 产品本身能否自传播**
 
 <div class="reading-spacer"></div>
@@ -76,7 +77,8 @@ cover: /assets/images/posts/2026-03-06-from-designer-to-ai-native-builder/cover.
 
 <div class="reading-spacer"></div>
 
-曾在知名服装品牌工作，意大利学设计。经济上行期，也曾享受和意大利设计师一起工作的氛围：开放、自由、充满创造力
+曾在知名服装品牌工作，意大利学设计
+经济上行期，也曾享受和意大利设计师一起工作的氛围：开放、自由、充满创造力
 
 <div class="reading-spacer"></div>
 
