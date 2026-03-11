@@ -316,11 +316,9 @@ It reminded me of my days studying in Italy.
 
 So I started joining different Web3 bootcamps:
 
-• Injective
-
-• Starknet
-
-• Polkadot
+- Injective
+- Starknet
+- Polkadot
 
 Then I realized something funny.
 
@@ -334,13 +332,10 @@ Since then, AI has become my learning partner.
 
 AI helped me restructure many knowledge systems:
 
-• design thinking
-
-• luxury industry history
-
-• art history
-
-• brand systems
+- design thinking
+- luxury industry history
+- art history
+- brand systems
 
 Over two years, AI recommended more than 1000 books to me.
 
@@ -350,19 +345,15 @@ I personally read over **200 of them**.
 
 When I entered Web3, I studied:
 
-• blockchain architecture
-
-• Solidity
-
-• smart contract development
+- blockchain architecture
+- Solidity
+- smart contract development
 
 I also read the foundational papers:
 
-• Bitcoin whitepaper
-
-• Ethereum yellow paper
-
-• Polkadot / JAM papers
+- Bitcoin whitepaper
+- Ethereum yellow paper
+- Polkadot / JAM papers
 
 With AI’s help, I managed to read and understand them.
 
@@ -388,13 +379,10 @@ By the end of 2025, I kept thinking about one question:
 
 Looking at my skills:
 
-• design
-
-• cross-cultural communication
-
-• AI collaboration
-
-• vibe coding
+- design
+- cross-cultural communication
+- AI collaboration
+- vibe coding
 
 It seemed like I knew many things. But they were scattered across different fields.
 
@@ -430,13 +418,10 @@ I want to explore one question:
 
 My exploration will focus on 4 directions:
 
-• AI Research Compression
-
-• Design Systems
-
-• Protocol Research
-
-• Content Systems
+- AI Research Compression
+- Design Systems
+- Protocol Research
+- Content Systems
 
 AI has already changed the way I learn and work.
 
@@ -446,11 +431,9 @@ But in the AI era, that standard may no longer apply.
 
 AI allows individuals to:
 
-• find the best experts in any field
-
-• access the most important books instantly
-
-• compress knowledge into high-density insights
+- find the best experts in any field
+- access the most important books instantly
+- compress knowledge into high-density insights
 
 Learning speed can be tens of times faster than before.
 
@@ -470,19 +453,15 @@ The future will not belong only to people who already control resources.
 
 It will also belong to people who:
 
-• keep learning
-
-• keep exploring
-
-• keep building in public
+- keep learning
+- keep exploring
+- keep building in public
 
 I’ll continue exploring questions like:
 
-• How will AI reshape our lives?
-
-• Can one person really build a company?
-
-• How do we find certainty in an uncertain era?
+- How will AI reshape our lives?
+- Can one person really build a company?
+- How do we find certainty in an uncertain era?
 
 The road is still long.
 
