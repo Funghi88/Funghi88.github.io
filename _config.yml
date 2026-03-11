@@ -9,6 +9,11 @@ baseurl: ""
 url: "https://funghi88.github.io"
 exclude: ["DESIGN-REFERENCES.md", "DESIGN-FRAMEWORK.md", "post-template.md", "DESIGN-SPEC.md", "README.md", "BLOG-WORKFLOW.md", "blog-editor"]
 
+# Markdown rendering
+# Treat single newlines as <br> so authoring line breaks match the published page.
+kramdown:
+  hard_wrap: true
+
 # SEO (jekyll-seo-tag)
 twitter:
   username: miccakitt

@@ -12,6 +12,8 @@ image: /assets/images/posts/YYYY-MM-DD-slug/cover.jpg
 <!-- 封面：layout 自动从 front matter 的 image 渲染，中英文都显示，无需在正文写 -->
 <!-- 文内图：在中文和英文对应位置各写一遍，否则切换语言时图片会消失 -->
 <!-- 与封面同格式的图：在图片后加 {: .cover-style } -->
+<!-- “呼吸感空行”：用 {% include spacer.html %}（会渲染为一段固定高度的留白） -->
+<!-- 单换行会在网页端保留为换行（kramdown hard_wrap 已开启），无需手动加 <br> -->
 
 # 中文标题
 
