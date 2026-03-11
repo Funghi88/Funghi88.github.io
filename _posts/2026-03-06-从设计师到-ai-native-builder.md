@@ -40,11 +40,13 @@ cover: /assets/images/posts/2026-03-06-from-designer-to-ai-native-builder/cover.
 
 <div class="reading-spacer"></div>
 
-<p class="keep-one-line">硅谷创业有条被落地实践有用的路径：持续观察市场捕获需求 → 用 AI 快速开发MVP → 让产品直接面对用户 → 再快速迭代</p>
+硅谷创业有条被落地实践有用的路径：
+持续观察市场捕获需求 → 用 AI 快速开发MVP → 让产品直接面对用户 → 再快速迭代
 
 <div class="reading-spacer"></div>
 
-<p class="keep-one-line">这条闭环若能持续循环，形成飞轮：<strong>捕捉需求 → 开发产品 → 用户反馈 → 迭代升级 → 建立影响力 → 转化 → 再发现新的需求</strong></p>
+这条闭环若能持续循环，形成飞轮：
+**捕捉需求 → 开发产品 → 用户反馈 → 迭代升级 → 建立影响力 → 转化 → 再发现新的需求**
 
 
 <div class="reading-spacer"></div>
@@ -362,11 +364,13 @@ But when the hype fades, every product still faces the same fundamental question
 
 <div class="reading-spacer"></div>
 
-<p class="keep-one-line">In Silicon Valley, there’s a very practical startup path: Observe the market → identify a real demand → build an MVP quickly with AI → put it in front of users → iterate fast.</p>
+In Silicon Valley, there’s a very practical startup path:
+Observe the market → identify a real demand → build an MVP quickly with AI → put it in front of users → iterate fast.
 
 <div class="reading-spacer"></div>
 
-<p class="keep-one-line">If this loop keeps running, it becomes a flywheel: <strong>Find demand → build product → user feedback → iterate → build influence → monetize → discover new demand</strong></p>
+If this loop keeps running, it becomes a flywheel:
+**Find demand → build product → user feedback → iterate → build influence → monetize → discover new demand**
 
 <div class="reading-spacer"></div>
 
