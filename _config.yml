@@ -2,6 +2,8 @@ theme: minima
 minima:
   skin: classic
   show_excerpts: true
+# Publish posts with future dates so date in _posts front matter is always shown
+future: true
 title: Annabelle Lee's Space
 description: AI-Native Research & Web3 Systems
 author: Annabelle Lee

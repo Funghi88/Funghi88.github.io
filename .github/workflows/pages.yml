@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Remove Jekyll cache
+        run: rm -rf .jekyll-cache
       - name: Generate OG card images
         run: |
           pip install Pillow PyYAML --quiet
