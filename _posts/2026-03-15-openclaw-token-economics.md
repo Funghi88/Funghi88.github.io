@@ -13,8 +13,6 @@ image:
   alt: The Hidden Cost of AI Agents — What the OpenClaw Hype Reveals
 ---
 
-### 中文版:
-
 ### OpenClaw 爆火背后：AI Agent 的 Token 成本悖论
 
 #### 为什么越来越多“一人公司”开始重新思考 AI 工作流
