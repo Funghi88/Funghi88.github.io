@@ -525,6 +525,8 @@ B:  人类设计 Workflow,  AI 负责执行
 
 ---
 
+<!-- lang: en -->
+
 ### The Hidden Cost of AI Agents
 
 ##### What the OpenClaw Hype Reveals About the Economics of AI
