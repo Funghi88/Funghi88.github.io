@@ -1,23 +1,26 @@
 ---
+layout: post
+title: OpenClaw 爆火背后：AI Agent 的 Token 成本悖论
+title_en: The Hidden Cost of AI Agents — What the OpenClaw Hype Reveals
+date: 2026-03-15
+category: Writing
+excerpt: 为什么越来越多「一人公司」开始重新思考 AI 工作流？OpenClaw 爆火背后，AI Agent 的 Token 经济学与成本悖论。
+excerpt_en: Why AI agents like OpenClaw burn so many tokens, and what it means for
+  one-person companies building with AI.
+cover: /assets/images/posts/2026-03-15-openclaw-token-economics/cover.png
+image:
+  path: /assets/images/posts/2026-03-15-openclaw-token-economics/og-card.png
+  alt: The Hidden Cost of AI Agents — What the OpenClaw Hype Reveals
+---
 
-## layout: post
 
-title: OpenClaw 爆火背后：AI Agent 的 Token 成本悖论  
-title_en: "The Hidden Cost of AI Agents — What the OpenClaw Hype Reveals"  
-date: 2026-03-15  
-category: Writing  
-excerpt: 为什么越来越多「一人公司」开始重新思考 AI 工作流？  
-excerpt_en: "Why AI agents like OpenClaw burn so many tokens"  
-cover: /assets/images/posts/2026-03-15-openclaw-token-economics/cover.png  
-image:  
-  path: /assets/images/posts/2026-03-15-openclaw-token-economics/og-card.png  
-  alt: "The Hidden Cost of AI Agents — What the OpenClaw Hype Reveals"
+### 中文版:
 
 ### OpenClaw 爆火背后：AI Agent 的 Token 成本悖论
 
 #### 为什么越来越多“一人公司”开始重新思考 AI 工作流
 
-  
+**Date:** Mar. 15, 2026  
 **Topic:** Token Economics of AI Agents
 
 ---
