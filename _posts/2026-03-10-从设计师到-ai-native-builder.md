@@ -1,13 +1,19 @@
 ---
 layout: post
 title: 从设计师到 AI-Native Builder
-title_en: "From Fashion Designer to AI-Native Builder"
+title_en: From Fashion Designer to AI-Native Builder
 date: 2026-03-10
 category: Writing
 excerpt: 在 AI 时代探索一人公司的可能性：捕捉需求、快速开发、用户反馈、迭代升级，持续 Build in Public。
-excerpt_en: Exploring Build in Public and the One-Person Company in the AI era—find demand, ship fast, learn from users, iterate.
+excerpt_en: Exploring Build in Public and the One-Person Company in the AI era—find
+  demand, ship fast, learn from users, iterate.
 cover: /assets/images/posts/2026-03-06-from-designer-to-ai-native-builder/cover.jpg
+image:
+  path: /assets/images/posts/2026-03-06-from-designer-to-ai-native-builder/og-card.png
+  alt: From Fashion Designer to AI-Native Builder
 ---
+
+
 
 ### **从设计师到 AI-Native Builder**
 

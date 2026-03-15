@@ -2,6 +2,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- comment -%} Force large image card and absolute image URL for posts (X/FB require absolute URL) {%- endcomment -%}
+  {%- if page.layout == 'post' -%}
+    {%- assign card_img = page.image.path | default: page.cover -%}
+    {%- if card_img -%}
+  <meta property="og:image" content="{{ site.url }}{{ card_img }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ site.url }}{{ card_img }}">
+    {%- endif -%}
+  {%- endif -%}
   {%- seo -%}
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   {%- feed_meta -%}

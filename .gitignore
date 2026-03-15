@@ -1,3 +1,6 @@
+# Jekyll build output (do not commit)
+_site/
+
 blog-editor/node_modules/
 
 # Image backups (keep original locally, don't push)

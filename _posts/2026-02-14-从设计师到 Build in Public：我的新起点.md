@@ -15,6 +15,8 @@ cover: /assets/images/posts/2026-02-14-build-in-public/cover.jpg
 
 
 
+
+
 # 从设计师到 Build in Public：我的新起点
 
 为什么我相信 AI + Web3 会是未来的方向
