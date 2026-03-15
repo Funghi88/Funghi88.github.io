@@ -13,14 +13,12 @@ image:
   alt: The Hidden Cost of AI Agents — What the OpenClaw Hype Reveals
 ---
 
-
 ### 中文版:
 
 ### OpenClaw 爆火背后：AI Agent 的 Token 成本悖论
 
 #### 为什么越来越多“一人公司”开始重新思考 AI 工作流
 
-**Date:** Mar. 15, 2026  
 **Topic:** Token Economics of AI Agents
 
 ---
@@ -531,7 +529,6 @@ B:  人类设计 Workflow,  AI 负责执行
 
 ##### What the OpenClaw Hype Reveals About the Economics of AI
 
-  
 **Topic:** Token Economics of AI Agents
 
 ---
@@ -539,8 +536,6 @@ B:  人类设计 Workflow,  AI 负责执行
 #### Something strange is happening in the AI developer world
 
 Over the past few weeks, a project called **OpenClaw** has exploded across the AI community.
-
-
 
 If you spend any time on GitHub, X, or developer Discords, you've probably seen posts like these:
 
@@ -550,19 +545,13 @@ If you spend any time on GitHub, X, or developer Discords, you've probably seen 
 
 The excitement is obvious.
 
-
-
 For years, AI mostly lived inside chat windows.  
 You asked questions. It answered.
-
-
 
 But systems like OpenClaw promise something very different.
 
 > AI that doesn’t just talk —  
 > **AI that acts.**
-
-
 
 Instead of responding to prompts, these systems can:
 
@@ -571,8 +560,6 @@ Instead of responding to prompts, these systems can:
 - run code
 - analyze results
 - iterate toward a goal
-
-
 
 In other words, the dream of a **digital worker** suddenly feels close.
 
@@ -588,14 +575,10 @@ A quieter one.
 
 Some developers noticed something unexpected.
 
-
-
 A task that looked simple could suddenly consume:
 
 - **hundreds of thousands of tokens**
 - sometimes **millions**
-
-
 
 A few experiments reportedly burned through **thousands of dollars in API costs** in just a few days.
 
@@ -603,21 +586,15 @@ Meanwhile, other developers were solving similar problems using a much simpler s
 
 **Cursor + manual workflow design**
 
-
-
 Total cost?
 
 About **$60 per month**.
-
-
 
 This created a strange tension in the community.
 
 If AI agents are supposed to automate work…
 
 why do they sometimes feel **more expensive** than doing it yourself?
-
-
 
 Which leads to a deeper question:
 
@@ -637,8 +614,6 @@ The AI figures everything out
 The task gets completed
 ```
 
-
-
 It’s an incredibly appealing vision.
 
 You don’t write the steps.  
@@ -646,13 +621,9 @@ You don’t design the system.
 
 You just describe the outcome.
 
-
-
 But the reality of agent systems looks very different.
 
 Once AI stops answering questions and starts **executing tasks**, the complexity of the system increases dramatically.
-
-
 
 An agent now has to:
 
@@ -666,8 +637,6 @@ An agent now has to:
 Instead of a simple interaction, you now have an **ongoing process**.
 
 And every step of that process requires another model call.
-
-
 
 The result is something many developers didn’t expect:
 
@@ -684,13 +653,9 @@ In the early era of AI tools, the main cost was simple:
 
 **compute.**
 
-
-
 You paid for the model to generate a response.
 
 But once AI systems start executing tasks, new costs appear.
-
-
 
 Now you’re paying for things like:
 
@@ -699,8 +664,6 @@ Now you’re paying for things like:
 - loading tool descriptions
 - replaying historical actions
 - repeated planning loops
-
-
 
 In other words:
 
@@ -718,21 +681,15 @@ This led me to a concept I’ve started thinking about a lot recently:
 
 > **The Token Economics of AI Agents**
 
-
-
 Or simply:
 
 **the cost structure of AI automation.**
-
-
 
 When people talk about AI agents, they usually debate questions like:
 
 - Can AI replace developers?
 - Can AI run businesses?
 - Can AI work autonomously?
-
-
 
 But a far more practical question often gets ignored:
 
@@ -757,8 +714,6 @@ Model response
 One prompt.  
 One output.
 
-
-
 Now compare that to an agent system:
 
 ```
@@ -776,8 +731,6 @@ Next action
 ```
 
 Instead of one interaction, the system loops continuously.
-
-
 
 Every loop involves:
 
@@ -802,8 +755,6 @@ That context often includes:
 - system instructions
 - memory
 
-
-
 The prompt quickly starts to look like this:
 
 ```
@@ -818,13 +769,9 @@ And with every iteration, the context grows larger.
 
 Each step includes everything that came before it.
 
-
-
 This means that over time:
 
 > **token usage compounds.**
-
-
 
 The same task might end up consuming **five to ten times more tokens** than a simple AI interaction.
 
@@ -842,16 +789,12 @@ The task was straightforward:
 
 Have AI read a large project folder and produce a progress summary.
 
-
-
 The folder contained:
 
 - documentation
 - task records
 - development notes
 - memory files
-
-
 
 Three different approaches were used.
 
@@ -881,8 +824,6 @@ Token usage:
 
 Nearly **ten times higher** than the simplest approach.
 
-
-
 The model wasn’t dramatically different.
 
 The architecture was.
@@ -902,8 +843,6 @@ In Western developer communities, agents are often used for:
 
 These tasks tend to be **complex and high-value**.
 
-
-
 In China, many early experiments focused on areas like:
 
 - social media automation
@@ -914,8 +853,6 @@ In China, many early experiments focused on areas like:
 But many of these tasks don’t actually require complex agents.
 
 A simple script plus an API often works just fine.
-
-
 
 Which led to some extreme cases.
 
@@ -931,13 +868,9 @@ One Chinese indie developer shared a particularly interesting experiment.
 
 He spent around **$2000 in token costs** testing OpenClaw in real workflows.
 
-
-
 His goal was simple:
 
 Could an AI agent act as a personal assistant?
-
-
 
 He tested several scenarios.
 
@@ -954,8 +887,6 @@ Effectively an **AI intelligence feed**.
 He gave the system a simple instruction:
 
 > “Tell me what Elon Musk did today.”
-
-
 
 The agent monitored updates related to:
 
@@ -989,13 +920,9 @@ To maintain decent quality, the developer had to use **Claude Opus**.
 
 The daily operating cost quickly reached **tens of dollars per day**.
 
-
-
 Cheaper models reduced the cost.
 
 But the output quality dropped significantly.
-
-
 
 His final conclusion was surprisingly pragmatic:
 
@@ -1012,13 +939,9 @@ Instead of building complex agent systems, I’ve been experimenting with someth
 
 **AI + structured workflows.**
 
-
-
 I’m not a software engineer by training.
 
 My background is actually in **fashion design**.
-
-
 
 But with tools like Cursor, I’ve been able to build more than a dozen small projects using AI-assisted coding.
 
@@ -1035,8 +958,6 @@ ViralLab is a small tool I built to analyze the structure of viral content onlin
 It helps creators identify patterns behind successful posts.
 
 The entire project was built with **Cursor Composer**.
-
-
 
 Development time:
 
@@ -1060,8 +981,6 @@ It acts like a lightweight personal workflow system for:
 - project planning
 - content organization
 
-
-
 Again, the build time was around **two days**.
 
 Total token cost: **under $20**.
@@ -1077,8 +996,6 @@ This project was built earlier while I was experimenting with the Polkadot ecosy
 It aggregates DeFi liquidity and staking data across several platforms.
 
 Both the front-end and back-end were built with AI-assisted coding.
-
-
 
 At that time Cursor didn’t even have Composer yet.
 
@@ -1096,8 +1013,6 @@ My blog itself was also built together with AI tools.
 
 I think of it as a kind of **personal AI editorial lab**.
 
-
-
 A place where I explore ideas around:
 
 - AI experiments
@@ -1114,8 +1029,6 @@ Looking across all these experiments, something interesting becomes clear.
 Many people ask whether **AI agents will change how we work**.
 
 But in my experience, complex agents are often unnecessary.
-
-
 
 What works surprisingly well is much simpler:
 
@@ -1135,8 +1048,6 @@ The vision behind projects like OpenClaw is fascinating.
 
 A world where AI systems autonomously run entire operations.
 
-
-
 But for many creators and indie builders today, that level of complexity isn’t required.
 
 Often, a simple combination of:
@@ -1144,8 +1055,6 @@ Often, a simple combination of:
 **AI tools + well-designed workflows**
 
 is already incredibly powerful.
-
-
 
 Which leads to a thought I keep coming back to:
 
@@ -1158,8 +1067,6 @@ Maybe it’s about everyone having an **AI toolkit**.
 #### One last question
 
 If you were building a **one-person company** today, which direction would you choose?
-
-
 
 A world where:
 
