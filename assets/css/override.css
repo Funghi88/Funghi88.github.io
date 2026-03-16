@@ -97,7 +97,7 @@ main .wrapper { margin-left: auto; margin-right: auto; padding-left: 24px; paddi
 .post-content ul, .post-content ol { margin: 12px 0 16px; padding-left: 1.2em; }
 .post-content li { margin: 6px 0; }
 .post-content li > p { margin: 8px 0; }
-.post-content img:not(.cover-style) { max-width: 480px; width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; margin: 16px 0; border-radius: 12px; }
+.post-content img:not(.cover-style) { max-width: 400px; width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; margin: 16px 0; border-radius: 12px; }
 .post-content hr { border: none; border-top: 1px solid #B8F3EB; margin: 24px 0; }
 .like-share-row { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 32px 0 24px; }
 .like-share-row .share-wrap { display: inline-flex; align-items: center; }
