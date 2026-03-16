@@ -329,6 +329,8 @@ For many Chinese readers, the first time they hear about *Think and Grow Rich* i
 
 [Fan Deng](https://chinese-publishers.com/dr-fan-deng/).
 
+<div class="reading-spacer"></div>
+
 But the reactions to this book are strangely divided.
 
 Some people say it changed their life.
@@ -342,6 +344,8 @@ The book was first published in 1937 by
 For nearly a century, it has remained one of the most controversial books about wealth ever written.
 
 Yet Fan Deng repeatedly said that this book was the **starting point of his financial transformation**.
+
+<div class="reading-spacer"></div>
 
 So what happened?
 
@@ -365,6 +369,8 @@ But he later admitted something surprising during his livestreams.
 
 His income was **far lower than people imagined**.
 
+<div class="reading-spacer"></div>
+
 After paying his mortgage, there was often very little left.
 
 From the outside, his life looked stable and respectable.
@@ -375,6 +381,8 @@ At some point he started asking himself a question:
 
 **Maybe I need to change the way I think.**
 
+<div class="reading-spacer"></div>
+
 ------
 
 #### **So he did something simple: he started reading a lot**
@@ -384,6 +392,8 @@ Fan Deng came from a typical academic family.
 His father was also a professor, and the family believed deeply in one idea:
 
 **Books change your destiny.**
+
+<div class="reading-spacer"></div>
 
 So when he started questioning his path, his instinct was simple:
 
@@ -397,11 +407,15 @@ Many of the students were entrepreneurs who had paid tens or even hundreds of th
 
 But despite their ambition, **almost none of them had time to read books systematically**.
 
+<div class="reading-spacer"></div>
+
 That observation led him to a simple idea:
 
 > If you don't have time to read the books,
 >
 > I'll read them — and explain them to you.
+
+<div class="reading-spacer"></div>
 
 At first it was extremely simple.
 
@@ -412,6 +426,8 @@ Later he started organizing offline reading clubs.
 Each book was condensed into a structured lecture.
 
 Slowly, people began to enjoy this format.
+
+<div class="reading-spacer"></div>
 
 Eventually investors came in.
 
@@ -426,6 +442,8 @@ That's how the platform
 gradually grew.
 
 From an entrepreneurial perspective, it's an inspiring story.
+
+<div class="reading-spacer"></div>
 
 But if you strip away the narrative, the logic is surprisingly simple:
 
@@ -480,6 +498,8 @@ Because people intuitively understand something:
 
 **These are principles — not shortcuts.**
 
+<div class="reading-spacer"></div>
+
 And that's exactly where the misunderstanding of *Think and Grow Rich* often happens.
 
 Many readers approach the book hoping to find:
@@ -504,6 +524,8 @@ But behind the scenes, they were often doing something simple for a long time.
 
 Take **Li Yizhou**, for example.
 
+<div class="reading-spacer"></div>
+
 When he first started creating content, it didn't go well.
 
 His videos barely received attention, and his follower count stagnated.
@@ -518,6 +540,8 @@ That moment helped him discover a formula:
 
 **emotion + structured expression = viral content**
 
+<div class="reading-spacer"></div>
+
 Eventually he developed a distinctive style.
 
 He would explain complex ideas using a whiteboard.
@@ -530,6 +554,8 @@ Gradually, the audience grew.
 
 Many people assume he teaches "how to make money."
 
+<div class="reading-spacer"></div>
+
 But if you observe closely, he has actually been doing one consistent thing:
 
 **structured output.**
@@ -541,6 +567,8 @@ But if you observe closely, he has actually been doing one consistent thing:
 In the past year, another creator grew extremely quickly:
 
 **Hong Shu.**
+
+<div class="reading-spacer"></div>
 
 He started posting content around March or April last year.
 
@@ -558,6 +586,8 @@ The real pattern is simpler.
 
 He found a **repeatable method**, and kept executing it.
 
+<div class="reading-spacer"></div>
+
 Not just one viral video.
 
 Almost every video performs well.
@@ -573,6 +603,8 @@ Entire industries are changing.
 And many people are quietly asking themselves:
 
 > What will I rely on to make money in the future?
+
+<div class="reading-spacer"></div>
 
 When the external environment becomes uncertain, people instinctively look for two things:
 
@@ -601,6 +633,8 @@ If you compress the entire book into one sentence, it might be this:
 
 **define a goal — then keep acting toward it.**
 
+<div class="reading-spacer"></div>
+
 At first glance, that sounds almost trivial.
 
 But many profound ideas sound trivial.
@@ -628,6 +662,8 @@ Most people read books like this:
 A small minority do something different.
 
 They **turn a principle into action**.
+
+<div class="reading-spacer"></div>
 
 Even if the action is small.
 
