@@ -13,8 +13,28 @@
 <script>
 (function() {
   document.querySelectorAll('a.lang-switch').forEach(function(a) {
-    a.addEventListener('click', function() { localStorage.setItem('lang', a.getAttribute('data-lang') || ''); });
+    a.addEventListener('click', function(e) {
+      localStorage.setItem('lang', a.getAttribute('data-lang') || '');
+    }, true);
   });
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest('a[href]');
+    if (!a || a.target === '_blank' || a.host !== location.host || a.classList.contains('lang-switch')) return;
+    var href = a.getAttribute('href') || '';
+    if (href === '' || href === '#' || href.indexOf('#') === 0) return;
+    var path = (a.pathname || '').replace(/\/$/, '') || '/';
+    var stored = localStorage.getItem('lang');
+    var hash = a.hash || '';
+    if (stored === 'en' && !path.startsWith('/en')) {
+      e.preventDefault();
+      var target = (path === '/' || path === '' || path === '/index.html') ? '/en/' : (path === '/about') ? '/en/about/' : (path.endsWith('.html') ? '/en' + path : '/en' + path + '/');
+      window.location.href = target + hash;
+    } else if (stored === 'zh' && path.startsWith('/en')) {
+      e.preventDefault();
+      var target = (path === '/en' || path === '/en/') ? '/' : (path === '/en/about') ? '/about/' : path.replace(/^\/en/, '') || '/';
+      window.location.href = target + hash;
+    }
+  }, true);
 })();
 (function() {
   var writingLink = document.querySelector('a.page-link[href*="#writing"]');
