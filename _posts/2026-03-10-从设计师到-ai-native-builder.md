@@ -9,7 +9,7 @@ excerpt_en: Exploring Build in Public and the One-Person Company in the AI eraâ€
   demand, ship fast, learn from users, iterate.
 cover: /assets/images/posts/2026-03-06-from-designer-to-ai-native-builder/cover.jpg
 image:
-  path: /assets/images/posts/2026-03-06-from-designer-to-ai-native-builder/og-card.png
+  path: /assets/images/posts/2026-03-06-from-designer-to-ai-native-builder/cover.jpg
   alt: From Fashion Designer to AI-Native Builder
 ---
 
