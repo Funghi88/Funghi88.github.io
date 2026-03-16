@@ -2,7 +2,9 @@
 layout: default
 ---
 {% assign post_url = page.url | prepend: site.baseurl | prepend: site.url %}
-<article class="post content-paper" data-page-type="post">
+{% comment %} Post spacing: set front matter spacing: relaxed (more) or spacing: compact (less). Omit for default. Use <div class="reading-spacer"></div> in content for extra breaks. {% endcomment %}
+{% assign spacing = page.spacing | default: 'default' %}
+<article class="post content-paper post-spacing-{{ spacing }}" data-page-type="post">
   <header class="post-header post-header-above">
     <h1 class="post-title" data-title-zh="{{ page.title_zh | default: page.title | escape }}" data-title-en="{{ page.title_en | default: page.title | escape }}">{{ page.title | escape }}</h1>
     {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}

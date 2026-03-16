@@ -10,6 +10,7 @@ cover: /assets/images/posts/2026-03-16-think-and-grow-rich/cover.png
 image:
   path: /assets/images/posts/2026-03-16-think-and-grow-rich/og-card.png
   alt: Fan Deng says one book made him wealthy — but most people say it's useless
+spacing: relaxed
 ---
 
 ### 《思考致富》
@@ -20,6 +21,7 @@ image:
 
 樊登老师
 
+<div class="reading-spacer"></div>
 
 但同样一本书，有人说改变了他的人生, 也有人说，全是鸡汤
 
@@ -27,6 +29,7 @@ image:
 
 为何被樊登老师定义为他赚钱的起点
 
+<div class="reading-spacer"></div>
 
 2013 年之前, 樊登老师是真的樊登老师, 在北京交通大学语言与传播学院教书
 
@@ -36,26 +39,31 @@ image:
 
 收入并没有大家想象的那么高, 每个月赚的钱，甚至还完房贷所剩不多
 
+<div class="reading-spacer"></div>
 
 看起来体面的社会身份标签，暗藏着的是生活的压力
 
 他曾想：**是不是需要改变自己的思维方式**
 
+<div class="reading-spacer"></div>
 
 樊登老师的家庭背景很典型, 父亲也是教授, 一家人都是靠读书改变命运
 
 于是他做了一件很朴素也很自然的事：**大量阅读**
 
+<div class="reading-spacer"></div>
 
 离开央视之后，他经常被邀请去商学院讲课, 课堂上，他发现:
 
 这些花几十万、几百万来学习的企业家、创业者，根本没时间系统读书
 
+<div class="reading-spacer"></div>
 
 前半生一直靠教书、主持谋生的樊登老师产生了一个念头：
 
 **既然大家没时间读书，那我读，然后讲给你们听**
 
+<div class="reading-spacer"></div>
 
 从最开始很简单的拿手机录音频群内分享,  到后来组织线下读书会
 
@@ -63,11 +71,13 @@ image:
 
 慢慢地，一批人开始喜欢这种形式
 
+<div class="reading-spacer"></div>
 
 后来投资人入场, 团队成立, 产品上线, 樊登读书慢慢成长起来
 
 从创业角度看，这是一个很成功、也很励志的故事
 
+<div class="reading-spacer"></div>
 
 但如果换个角度，其实樊登老师遵循的只是一个很简单的逻辑：
 
@@ -83,6 +93,8 @@ image:
 
 > "这是一本鸡汤书, 一点用没有"
 
+<div class="reading-spacer"></div>
+
 但同样一批人，每天其实也在读其他类似的书籍,
 
 比如中国人从小就背的：《三字经》
@@ -97,6 +109,8 @@ image:
 
 长期主义、心性、 和行动
 
+<div class="reading-spacer"></div>
+
 例如《道德经》里那句话：
 
 > 合抱之木，生于毫末
@@ -107,13 +121,19 @@ image:
 
 "这句话是骗人的"
 
+<div class="reading-spacer"></div>
+
 为什么？
 
 因为大家默认：
 
 **这是道理，不是捷径**
 
+<div class="reading-spacer"></div>
+
 问题就出在这里
+
+<div class="reading-spacer"></div>
 
 很多人读《思考致富》的时候，期待的是：
 
@@ -133,6 +153,8 @@ image:
 
 **李一舟**
 
+<div class="reading-spacer"></div>
+
 他早期做内容的时候，其实并不顺利
 
 内容没人看，账号也不明显增长
@@ -142,6 +164,8 @@ image:
 直到后来一条情人节人生感悟的视频爆火后
 
 他逐渐找到了方法：**情绪 + 结构表达 = 爆款视频**
+
+<div class="reading-spacer"></div>
 
 后来演变成**用白板讲复杂问题**
 
@@ -155,6 +179,8 @@ image:
 
 很多人觉得他讲的是赚钱方法
 
+<div class="reading-spacer"></div>
+
 但如果细品，会发现他其实一直在做一件事：
 
 **结构化输出**
@@ -166,6 +192,8 @@ image:
 去年开始，自媒体圈又出现了一个增长很快的人：
 
 **洪树**
+
+<div class="reading-spacer"></div>
 
 他从去年三四月开始做内容, 一年不到，全网涨粉 **90 万**!
 
@@ -181,6 +209,8 @@ image:
 
 **掌握一个简单的方法, 并持续执行下去**
 
+<div class="reading-spacer"></div>
+
 不是爆一条视频, 每条视频都在爆
 
 ---
@@ -194,6 +224,8 @@ image:
 需要我们大多人开始重新思考一个问题：
 
 > 我还能靠什么赚钱？
+
+<div class="reading-spacer"></div>
 
 在这的外部大环境里，人会本能地寻找两样东西：
 
@@ -213,6 +245,8 @@ image:
 
 **长期执行一个简单系统**
 
+<div class="reading-spacer"></div>
+
 ---
 
 #### **《思考致富》其实只讲了一件事**
@@ -224,6 +258,8 @@ image:
 听起来几乎就是废话, 但要明白:
 
 很多道理听上去都像废话!
+
+<div class="reading-spacer"></div>
 
 比如：
 
@@ -240,6 +276,8 @@ image:
 #### **只有少数人会改变人生**
 
 大多数人读书的方式长这样：读完 → 很有道理 → 结束🔚
+
+<div class="reading-spacer"></div>
 
 但少数人会：**把一个道理化为行动**
 

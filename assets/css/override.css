@@ -89,6 +89,11 @@ main .wrapper { margin-left: auto; margin-right: auto; padding-left: 24px; paddi
 .post-content p:first-child { margin-top: 0; }
 .post-content p:last-child { margin-bottom: 0; }
 .post-content .reading-spacer { height: 18px; }
+/* Adjustable spacing: set spacing: relaxed or spacing: compact in post front matter */
+.post-spacing-relaxed .post-content p { margin: 24px 0; }
+.post-spacing-relaxed .post-content .reading-spacer { height: 24px; }
+.post-spacing-compact .post-content p { margin: 12px 0; }
+.post-spacing-compact .post-content .reading-spacer { height: 12px; }
 .post-content ul, .post-content ol { margin: 12px 0 16px; padding-left: 1.2em; }
 .post-content li { margin: 6px 0; }
 .post-content li > p { margin: 8px 0; }
