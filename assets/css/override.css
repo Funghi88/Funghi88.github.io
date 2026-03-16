@@ -68,11 +68,11 @@ main .wrapper { margin-left: auto; margin-right: auto; padding-left: 24px; paddi
 .content-separator { height: 48px; border-top: 1px solid #B8F3EB; margin-top: 32px; }
 .discussion-paper { margin-top: 0; }
 .post-header-above { padding-top: 0; }
-.post-cover { margin: 24px 0 32px 0; overflow: hidden; border-radius: 12px; max-width: 400px; width: 100%; aspect-ratio: 16/9; position: relative; display: block; }
-.post-cover img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.post-cover { margin: 24px 0 32px 0; overflow: hidden; border-radius: 12px; }
+.post-cover img { width: 100%; height: auto; display: block; vertical-align: top; }
 /* Inline images in same format as cover: ![alt](path){: .cover-style } */
-.post-content p:has(img.cover-style) { margin: 24px 0 32px 0; overflow: hidden; border-radius: 12px; max-width: 400px; width: 100%; aspect-ratio: 16/9; position: relative; display: block; }
-.post-content p:has(img.cover-style) img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block; margin: 0; border-radius: 0; }
+.post-content p:has(img.cover-style) { margin: 24px 0 32px 0; overflow: hidden; border-radius: 12px; }
+.post-content p:has(img.cover-style) img { width: 100%; height: auto; display: block; vertical-align: top; margin: 0; border-radius: 0; }
 .post-meta-qr-share { display: inline-flex; align-items: center; gap: 6px; flex-wrap: nowrap; flex-shrink: 0; margin-left: 4px; }
 .post-meta-qr { position: relative; z-index: 2; display: inline-block; }
 .post-meta-qr img { width: 24px; height: 24px; border-radius: 6px; opacity: 0.9; transition: transform 0.2s ease; display: block; }
@@ -97,7 +97,7 @@ main .wrapper { margin-left: auto; margin-right: auto; padding-left: 24px; paddi
 .post-content ul, .post-content ol { margin: 12px 0 16px; padding-left: 1.2em; }
 .post-content li { margin: 6px 0; }
 .post-content li > p { margin: 8px 0; }
-.post-content img:not(.cover-style) { max-width: 400px; width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; margin: 16px 0; border-radius: 12px; }
+.post-content img:not(.cover-style) { max-width: 100%; height: auto; display: block; margin: 16px 0; border-radius: 12px; }
 .post-content hr { border: none; border-top: 1px solid #B8F3EB; margin: 24px 0; }
 .like-share-row { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 32px 0 24px; }
 .like-share-row .share-wrap { display: inline-flex; align-items: center; }
