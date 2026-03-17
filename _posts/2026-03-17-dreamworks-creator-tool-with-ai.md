@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DreamWorks：我如何用 AI + 2 天时间，做了一个属于自己的创作者工具
-title_en: DreamWorks: How I Built My Own Creator Tool with AI in 2 Days
+title_en: "DreamWorks: How I Built My Own Creator Tool with AI in 2 Days"
 date: 2026-03-17
 category: Writing
 excerpt: 用 Cursor + GPT，2–3 天做出帮助创作者更放松「表达」的录制工具。AI 不是工具，而是 co-pilot。
