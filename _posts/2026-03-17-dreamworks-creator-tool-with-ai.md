@@ -245,9 +245,9 @@ spacing: relaxed
 
 ---
 
-##### 🔥 差异在于:
-
 ![DreamWorks 界面](/assets/images/posts/2026-03-17-dreamworks/screenshot.png)
+
+##### 🔥 差异在于:
 
 ##### 现有工具逻辑：
 
@@ -559,9 +559,9 @@ When you build a tool:
 
 ------
 
-##### 🔥 The real difference
-
 ![DreamWorks Interface](/assets/images/posts/2026-03-17-dreamworks/screenshot.png)
+
+##### 🔥 The real difference
 
 ###### Existing tools:
 
