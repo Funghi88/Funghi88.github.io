@@ -19,7 +19,7 @@ spacing: relaxed
 
 ---
 
-###### 以前，如果你想做一个工具，你需要：
+### 以前，如果你想做一个工具，你需要：
 
 - 懂编程
 - 找工程师
@@ -34,7 +34,7 @@ spacing: relaxed
 
 ---
 
-🌍 2026 年, 时代正带我们迈入新阶段：
+### 🌍 2026 年, 时代正带我们迈入新阶段：
 
 > ❗ 一个人，也能干出一款简单好用的产品
 
@@ -42,7 +42,7 @@ spacing: relaxed
 
 原因有三：
 
-##### 1️⃣ AI 正在压缩开发成本
+#### 1️⃣ AI 正在压缩开发成本
 
 - GPT → 写逻辑
 - Cursor → 写代码
@@ -52,7 +52,7 @@ spacing: relaxed
 
 ---
 
-##### 2️⃣ 表达正在变成生产力
+#### 2️⃣ 表达正在变成生产力
 
 过去：
 
@@ -64,7 +64,7 @@ spacing: relaxed
 
 ---
 
-##### 3️⃣ 社交方式正在改变
+#### 3️⃣ 社交方式正在改变
 
 > 工具 = 名片  
 > 工具 = 信任  
@@ -80,7 +80,7 @@ spacing: relaxed
 
 比如:
 
-##### ❗ 1：工具割裂
+#### ❗ 1：工具割裂
 
 我要同时使用：
 
@@ -93,7 +93,7 @@ spacing: relaxed
 
 ---
 
-##### ❗ 2：缺乏"信任感"
+#### ❗ 2：缺乏"信任感"
 
 纯屏幕录制：
 
@@ -103,7 +103,7 @@ spacing: relaxed
 
 ---
 
-##### ❗ 3：表达成本太高
+#### ❗ 3：表达成本太高
 
 - 需要记稿
 - 容易卡壳
@@ -111,13 +111,13 @@ spacing: relaxed
 
 ---
 
-##### 🚀 我不想在开始阶段, 也让一堆新技能 + 新工具挡我发财之路, 所以：
+#### 🚀 我不想在开始阶段, 也让一堆新技能 + 新工具挡我发财之路, 所以：
 
 > ❗ 我干脆自己做一个
 
 ---
 
-##### 🧩 核心功能就聚焦自媒体最需要的
+#### 🧩 核心功能就聚焦自媒体最需要的
 
 - 屏幕共享（Screen Share）
 - 圆形摄像头（PiP）
@@ -128,56 +128,56 @@ spacing: relaxed
 
 ---
 
-##### 🎯 我的目标是 build in public + think aloud, 因此我需要:
+#### 🎯 我的目标是 build in public + think aloud, 因此我需要:
 
-##### 1️⃣ 用于"展示思考"
+#### 1️⃣ 用于"展示思考"
 
 - coding + 讲解
 - AI 协作过程
 
 ---
 
-##### 2️⃣ 建立"信任感"
+#### 2️⃣ 建立"信任感"
 
 - 摄像头 = 人感
 - 让观众得看到我
 
 ---
 
-##### 3️⃣ 降低表达门槛
+#### 3️⃣ 降低表达门槛
 
 - 提词器
 - 一体化 workflow
 
 ---
 
-##### 💰 我的原则是, 好用 + 好看 + 一个工具全搞定, 最好还能...... 
+#### 💰 我的原则是, 好用 + 好看 + 一个工具全搞定, 最好还能...... 
 
 <div class="reading-spacer"></div>
 
-##### 但我看遍最好的工具
+#### 但我看遍最好的工具
 
-##### 🟢 快速分享类
+#### 🟢 快速分享类
 
 - Loom：约 $12.5/月（SaaS）
 
 ---
 
-##### 🔵 专业制作类
+#### 🔵 专业制作类
 
 - Camtasia：约 $299（一次性）
 - Screen Studio：约 $89/年
 
 ---
 
-##### 🟠 技术类工具
+#### 🟠 技术类工具
 
 - OBS Studio：免费（但复杂）
 - ShareX：免费
 
 ---
 
-##### 除极高的 面上成本💰, 更狠的是隐形成本：
+#### 除极高的 面上成本💰, 更狠的是隐形成本：
 
 - 时间成本（学习 + 切换）
 - 表达成本（打断思路）
@@ -187,11 +187,11 @@ spacing: relaxed
 
 ---
 
-##### 🧠 一个极其重要的认知转变
+#### 🧠 一个极其重要的认知转变
 
 要说做 DreamWorks 我有学到点什么, 只能说: 
 
-##### 1️⃣ AI 不是工具，而是"co-pilot"
+#### 1️⃣ AI 不是工具，而是"co-pilot"
 
 - Cursor 写代码
 - GPT 解释逻辑
@@ -199,7 +199,7 @@ spacing: relaxed
 
 ---
 
-##### 2️⃣ 设计能力 = 产品能力
+#### 2️⃣ 设计能力 = 产品能力
 
 我没有很多代码经验 (如果算有, 25 年 7 月起 学了一点区块链代码)，
 
@@ -211,7 +211,7 @@ spacing: relaxed
 
 ---
 
-##### 3️⃣ 工具就是"分身"
+#### 3️⃣ 工具就是"分身"
 
 当我以工具为媒介：
 
@@ -225,7 +225,7 @@ spacing: relaxed
 
 ---
 
-##### ⚔️  DreamWorks vs 市面工具
+#### ⚔️  DreamWorks vs 市面工具
 
 | 维度        | 含义       |
 | ----------- | ---------- |
@@ -247,15 +247,15 @@ spacing: relaxed
 
 ![DreamWorks 界面](/assets/images/posts/2026-03-17-dreamworks/screenshot.png)
 
-##### 🔥 差异在于:
+#### 🔥 差异在于:
 
-##### 现有工具逻辑：
+#### 现有工具逻辑：
 
 > Recording → Editing → Sharing
 
 ---
 
-##### DreamWorks：
+#### DreamWorks：
 
 > Thinking → Explaining → Recording
 
@@ -267,7 +267,7 @@ spacing: relaxed
 
 ---
 
-##### 🔥 一点点时代感悟
+#### 🔥 一点点时代感悟
 
 过去：
 
@@ -285,7 +285,7 @@ spacing: relaxed
 
 ---
 
-##### 🚀 边走边看, 遇到美景!
+#### 🚀 边走边看, 遇到美景!
 
 - 持续优化
 - 认真分享我 + AI 
@@ -293,7 +293,7 @@ spacing: relaxed
 
 ---
 
-##### 🧩 Annabelle 的倔强:
+#### 🧩 Annabelle 的倔强:
 
 > 未来最重要的力量，不是工程，不是设计，是用 AI 构建系统
 
@@ -319,15 +319,15 @@ using Cursor + GPT, I built this in 2–3 days:
 
 ------
 
-##### 🌍 2026: We're entering a new phase
+#### 🌍 2026: We're entering a new phase
 
 > ❗ One person can now build a simple, useful product
 
 <div class="reading-spacer"></div>
 
-#### Why?
+### Why?
 
-##### 1️⃣ AI is compressing the cost of building
+#### 1️⃣ AI is compressing the cost of building
 
 - GPT → writes logic  
 - Cursor → writes code  
@@ -338,7 +338,7 @@ now only needs **one person + AI**
 
 ------
 
-##### 2️⃣ Expression is becoming productivity
+#### 2️⃣ Expression is becoming productivity
 
 Before:
 
@@ -350,7 +350,7 @@ Now:
 
 ------
 
-##### 3️⃣ Social dynamics are changing
+#### 3️⃣ Social dynamics are changing
 
 > Tools = identity  
 > Tools = trust  
@@ -371,7 +371,7 @@ Everyone runs into the same problems:
 
 ------
 
-##### ❗ 1. Fragmented tools
+#### ❗ 1. Fragmented tools
 
 I had to use:
 
@@ -385,7 +385,7 @@ I had to use:
 
 ------
 
-##### ❗ 2. Lack of "presence"
+#### ❗ 2. Lack of "presence"
 
 Pure screen recordings feel:
 
@@ -395,7 +395,7 @@ Pure screen recordings feel:
 
 ------
 
-##### ❗ 3. High cost of expression
+#### ❗ 3. High cost of expression
 
 - You need to memorize scripts  
 - You get stuck easily  
@@ -403,13 +403,13 @@ Pure screen recordings feel:
 
 ------
 
-#### 🚀 So I made a decision:
+### 🚀 So I made a decision:
 
 > ❗ Instead of learning more tools, I built my own
 
 ------
 
-##### 🧩 DreamWorks — Core Features
+#### 🧩 DreamWorks — Core Features
 
 Focused on what creators actually need:
 
@@ -422,7 +422,7 @@ Focused on what creators actually need:
 
 ------
 
-##### 🎯 Why I built this
+#### 🎯 Why I built this
 
 I'm building in public and thinking out loud.
 
@@ -430,58 +430,58 @@ So I need:
 
 ------
 
-##### 1️⃣ A way to show my thinking
+#### 1️⃣ A way to show my thinking
 
 - Coding + explaining  
 - Showing how I work with AI  
 
 ------
 
-##### 2️⃣ A way to build trust
+#### 2️⃣ A way to build trust
 
 - Camera = presence  
 - Let people see *me*  
 
 ------
 
-##### 3️⃣ A way to reduce friction
+#### 3️⃣ A way to reduce friction
 
 - Teleprompter  
 - Everything in one workflow  
 
 ------
 
-##### 💰 My principle:
+#### 💰 My principle:
 
 > Simple. Clean. One tool does it all.
 
 <div class="reading-spacer"></div>
 
-##### But when I looked at existing tools:
+#### But when I looked at existing tools:
 
 ------
 
-###### 🟢 Quick sharing tools
+#### 🟢 Quick sharing tools
 
 - Loom — ~$12.5/month  
 
 ------
 
-###### 🔵 Professional tools
+#### 🔵 Professional tools
 
 - Camtasia — ~$299 (one-time)  
 - Screen Studio — ~$89/year  
 
 ------
 
-###### 🟠 Technical tools
+#### 🟠 Technical tools
 
 - OBS Studio — Free (but complex)  
 - ShareX — Free  
 
 ------
 
-##### The real cost isn't money
+#### The real cost isn't money
 
 It's:
 
@@ -496,14 +496,14 @@ It's:
 
 ------
 
-##### 🧠 What I actually learned
+#### 🧠 What I actually learned
 
 This wasn't just a project.  
 It was a shift in how I think.
 
 ------
 
-##### 1️⃣ AI is not a tool — it's a co-pilot
+#### 1️⃣ AI is not a tool — it's a co-pilot
 
 - Cursor writes code  
 - GPT explains logic  
@@ -511,7 +511,7 @@ It was a shift in how I think.
 
 ------
 
-##### 2️⃣ Design = Product
+#### 2️⃣ Design = Product
 
 I'm not an experienced engineer.
 
@@ -525,7 +525,7 @@ But I was able to:
 
 ------
 
-##### 3️⃣ Tools are your "extended self"
+#### 3️⃣ Tools are your "extended self"
 
 When you build a tool:
 
@@ -535,9 +535,9 @@ When you build a tool:
 
 ------
 
-#### ⚔️ DreamWorks vs Existing Tools
+### ⚔️ DreamWorks vs Existing Tools
 
-###### Comparison Dimensions
+### Comparison Dimensions
 
 | Dimension   | Meaning            |
 | ----------- | ------------------ |
@@ -547,7 +547,7 @@ When you build a tool:
 | Interaction | Enables connection |
 | Workflow    | Integrated flow    |
 
-###### Comparison Table
+### Comparison Table
 
 | Tool          | Recording | Thinking | Identity | Interaction |
 | ------------- | --------- | -------- | -------- | ----------- |
@@ -561,15 +561,15 @@ When you build a tool:
 
 ![DreamWorks Interface](/assets/images/posts/2026-03-17-dreamworks/screenshot.png)
 
-##### 🔥 The real difference
+#### 🔥 The real difference
 
-###### Existing tools:
+#### Existing tools:
 
 > Recording → Editing → Sharing  
 
 ------
 
-###### DreamWorks:
+#### DreamWorks:
 
 > Thinking → Explaining → Recording  
 
@@ -582,7 +582,7 @@ When you build a tool:
 
 ------
 
-##### 🔥 A reflection on the times
+#### 🔥 A reflection on the times
 
 Before:
 
@@ -608,7 +608,7 @@ DreamWorks, for me, is not just a tool.
 
 ------
 
-##### 🧩 Annabelle's take:
+#### 🧩 Annabelle's take:
 
 > The most important skill in the future  
 > is not engineering, not design—  
