@@ -6,9 +6,9 @@ date: 2026-03-30
 category: Writing
 excerpt: 演示本该连贯，却被录屏、摄像头、白板、会议拆成四五款软件。我用 AI 把问题拆成「角色」与能力，最后落在一个窗口里协同完成。
 excerpt_en: A demo should flow, but screen recorders, cameras, whiteboards, and calls split it across apps. I used AI to decompose the work into roles and capabilities—and landed on one window that runs them together.
-cover: /assets/images/posts/2026-03-30-no-more-five-tools-switching/cover.png
+cover: /assets/images/posts/2026-03-30-no-more-five-tools-switching/cover.jpg
 image:
-  path: /assets/images/posts/2026-03-30-no-more-five-tools-switching/cover.png
+  path: /assets/images/posts/2026-03-30-no-more-five-tools-switching/cover.jpg
   alt: Vibe coding and integrated creator workflow
 spacing: relaxed
 ---
@@ -113,7 +113,7 @@ spacing: relaxed
 
 而和传统开发最大的不同是：这个循环是用自然语言驱动的，而非代码。
 
-![一窗内同时录屏、摄像头与界面，无需在多款软件间切换](/assets/images/posts/2026-03-30-no-more-five-tools-switching/screenshot-integrated-capture.png)
+![一窗内同时录屏、摄像头与界面，无需在多款软件间切换](/assets/images/posts/2026-03-30-no-more-five-tools-switching/screenshot-integrated-capture.jpg)
 
 ---
 
@@ -133,7 +133,7 @@ spacing: relaxed
 
 由此带来一个本质变化：**自然语言，开始成为系统的控制核心。**
 
-![在 Cursor 里与 AI 协作，把需求写成可执行的说明与文档](/assets/images/posts/2026-03-30-no-more-five-tools-switching/screenshot-cursor-collab.png)
+![在 Cursor 里与 AI 协作，把需求写成可执行的说明与文档](/assets/images/posts/2026-03-30-no-more-five-tools-switching/screenshot-cursor-collab.jpg)
 
 ---
 
@@ -161,7 +161,7 @@ spacing: relaxed
 
 但这个窗口里，同时集成了：屏幕录制、摄像头、白板、多人会议——无需任何切换。
 
-![集成白板、提词器与录制流程的单一界面](/assets/images/posts/2026-03-30-no-more-five-tools-switching/screenshot-dreamworks-ui.png)
+![集成白板、提词器与录制流程的单一界面](/assets/images/posts/2026-03-30-no-more-five-tools-switching/screenshot-dreamworks-ui.jpg)
 
 ---
 
@@ -352,7 +352,7 @@ This is fundamentally different from traditional development.
 
 Because the entire loop is driven by **natural language**, not code.
 
-![Screen capture, camera, and app UI in one window—no app-hopping](/assets/images/posts/2026-03-30-no-more-five-tools-switching/screenshot-integrated-capture.png)
+![Screen capture, camera, and app UI in one window—no app-hopping](/assets/images/posts/2026-03-30-no-more-five-tools-switching/screenshot-integrated-capture.jpg)
 
 ---
 
@@ -380,7 +380,7 @@ Which leads to a deeper shift:
 
 > **Language is no longer just for communication. It's becoming control.**
 
-![Collaborating with AI in Cursor—requirements as living docs](/assets/images/posts/2026-03-30-no-more-five-tools-switching/screenshot-cursor-collab.png)
+![Collaborating with AI in Cursor—requirements as living docs](/assets/images/posts/2026-03-30-no-more-five-tools-switching/screenshot-cursor-collab.jpg)
 
 ---
 
@@ -421,7 +421,7 @@ Inside it:
 
 All running together.
 
-![Whiteboard, teleprompter, and recording in one integrated surface](/assets/images/posts/2026-03-30-no-more-five-tools-switching/screenshot-dreamworks-ui.png)
+![Whiteboard, teleprompter, and recording in one integrated surface](/assets/images/posts/2026-03-30-no-more-five-tools-switching/screenshot-dreamworks-ui.jpg)
 
 ---
 
