@@ -1,0 +1,13 @@
+# Minimal probe: if this never runs on push to main, GitHub is not dispatching workflows.
+name: Push ping
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo
+        run: echo "push ok sha=${GITHUB_SHA}"
