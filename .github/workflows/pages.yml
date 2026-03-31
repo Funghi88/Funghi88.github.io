@@ -21,6 +21,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Mirror host URLs for funghi8 backup repo
+        if: github.repository == 'funghi8/funghi8.github.io'
+        run: |
+          sed -i 's|url: "https://funghi88.github.io"|url: "https://funghi8.github.io"|' _config.yml
+          sed -i 's|https://funghi88.github.io/sitemap.xml|https://funghi8.github.io/sitemap.xml|' robots.txt
       - name: Remove Jekyll cache
         run: rm -rf .jekyll-cache
       - name: Generate OG card images
