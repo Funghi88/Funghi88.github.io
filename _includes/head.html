@@ -2,16 +2,24 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- comment -%} Force large image card and absolute image URL for posts (X/FB require absolute URL) {%- endcomment -%}
+  {%- seo -%}
+  {%- comment -%}
+    jekyll-seo-tag 2.8 emits meta property="twitter:image" (and property="twitter:title").
+    X / Twitter Card crawlers expect name="twitter:image". If the invalid property tag appears
+    last, the preview can fall back to a generic card. Re-emit valid tags after SEO.
+  {%- endcomment -%}
   {%- if page.layout == 'post' -%}
     {%- assign card_img = page.image.path | default: page.cover -%}
     {%- if card_img -%}
-  <meta property="og:image" content="{{ site.url }}{{ card_img }}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="{{ site.url }}{{ card_img }}">
+  <meta name="twitter:title" content="{{ page.title | strip_html | escape }}">
+  <meta name="twitter:image" content="{{ card_img | absolute_url }}">
+      {%- assign tw_img_alt = page.image.alt | default: page.title_en | default: page.title -%}
+      {%- if tw_img_alt -%}
+  <meta name="twitter:image:alt" content="{{ tw_img_alt | strip_html | escape }}">
+      {%- endif -%}
     {%- endif -%}
   {%- endif -%}
-  {%- seo -%}
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
